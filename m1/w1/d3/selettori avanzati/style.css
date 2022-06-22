@@ -1,0 +1,56 @@
+blockquote + p{ /* il primo tag p dopo ogni blockquote*/
+    color: red;
+
+
+}
+
+span ~ { /* per fare il tilde premi alt+1+2+6 dal tastierino dei numer*/
+    color: blue;
+}
+
+
+button{
+    background-color: red;
+    transition: background-color 1s;
+}
+
+button:hover{
+    background-color: yellow;
+    border: none;
+}
+
+ul li:not(.escluso),{
+    text-decoration: overline
+}
+
+ul li:last-child{
+    color: blueviolet;
+
+}
+
+/* inizio parte copiata da Michele*/
+
+ul li:not(.escluso) {
+    text-decoration: overline;
+}
+
+ul li:last-child{
+    color: purple;
+}
+
+ul li:nth-of-type(3){
+    background-color: red;
+}
+
+table tr:nth-of-type(odd){
+    background-color: #ccc
+}
+
+/* pseudoelementi */
+
+table tr td::before{
+    content: "@"
+}
+table tr td::after{
+    content: "@"
+}

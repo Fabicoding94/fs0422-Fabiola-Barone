@@ -1,0 +1,42 @@
+div{    color: red;
+    /*I colori possono essere scelti per nome.
+    
+    Oppure in esadecimale: 
+    #zzzzzz (rosso, verde, blu)
+    
+    Oppure i colori in rgb
+    rgb( rosso, verde, blu) con numeri da 0 a 255.
+    }
+    
+    */}
+
+
+div{ /*selezione attraverso tag*/
+    color: red;
+
+}
+
+#div-blue{ /*selezione per id*/
+    color: blue;
+
+}
+
+.testo-verde{ /*selezione attraverso la classe*/
+    color: green;
+} 
+
+span{
+    font-style: italic ;
+}
+
+div span{
+    font-weight: 600; /*dal 600 è come un grassetto*/
+}
+
+#area-grassetto > span{
+    font-weight: 600;
+}
+
+#area-grassetto > div span{
+    background-color: blue;
+}

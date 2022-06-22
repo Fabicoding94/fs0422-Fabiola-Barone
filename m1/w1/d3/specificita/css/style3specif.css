@@ -1,0 +1,42 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*in caso di conflitto vince quello che è stato scritto più in basso*/
+
+/*vince il tag più specifico. In ordine da quello che ha priorità a quello che ne ha meno: id, classe, tag.*/
+
+/* per far andare a capo il codice vai su "view" e poi "word wrap"*/
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+#main-header a {
+    text-decoration: none;
+    color: blueviolet;
+
+}
+
+div.sfondo-blue { /* funzione solo se la classe è applicata ad un div*/
+    background-color: red;
+
+     
+}
+
+div.sfondo-blue.grasseto { /* funzione solo se le classi sono applicate contemporaneamente ad un div*/
+    font-weight: bold;
+
+     
+}
+
+strong{ color: orange !important;} /*possiamo usare "!important! in estremis se non si vince il conflitto e abbiamo poco tempo*/
+
+
+.sfondo.blu, .testo-grassetto{ /*se dopo un tag(o classe o id) metto virgola e spazio e poi scrivo un altro tag, quella proprietà viene attribuita a tutti i tag, indipendentemente che siano figli o meno del primo tag. In questo caso a tutte le righe che hannoclasse ".sfondo.blu" e ".testo-grassetto" */
+
+
+}
+

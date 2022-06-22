@@ -1,0 +1,39 @@
+/*tipografia*/
+
+@font-face {
+    font-family: MioFont ; /*nome che voglio dare al nuovo font*/
+    src: url("");
+}
+
+
+h1{
+    font-size: 50px;
+}
+
+
+h1{
+    font-size: 0.8rem;
+}
+
+
+h1{
+    font-size: 50%;
+}
+
+h2{
+    font-size: 2rem; /*due volte la dimensione del tag html*/
+}
+
+h2 span{
+    font-size: 2em; /*2 volte la dimensione del genitore(h2) */
+}
+
+p{
+line-height: 2rem;
+letter-spacing: 5px;
+text-shadow: 3px 3px 3px #000, -30px -30px 4px red; /* Ciascun set di 4 info indica una ombra. Ciascun set è formato dalle info relative a: asse x, asse, y, asse z, colore.*/
+
+}
+
+
+
