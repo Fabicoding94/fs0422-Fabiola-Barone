@@ -1,0 +1,131 @@
+body{
+    text-align: center;
+    
+}
+
+
+header {
+    background-color: black;
+    background-size: 200%;
+    padding-top: 5em;
+    padding-bottom: 3em;
+    
+    
+    }
+
+main section{
+
+    background-image: url(../images/banner.jpg);
+    
+    background-size:cover ;
+    background-position: center;
+    padding: 3px;
+    padding-top: 3em ;
+    padding-bottom: 5em ;
+}
+
+
+main section>p{
+    margin-bottom: 3em;
+}
+
+main section>a{
+    background-color: rgb(252, 110, 59) ;
+    
+    font-family:  'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.65;
+    margin-top: 3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+}
+
+h1, h3, h2{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+h2{
+    color: white;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    
+}
+
+#quadorange{
+    background-color: orangered;
+color: white;
+line-height: 1.65;
+}
+
+main div>h2{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+em{
+    font-size: smaller;
+    font-style: italic;
+}
+
+#ceo{
+    font-size: small;
+    font-weight: bold;
+    line-height: 1.65;
+}
+
+
+
+footer a{
+    color: white;
+    font-size: medium;
+    line-height: 1.65;
+}
+
+div{
+    padding-bottom: 3em;
+
+}
+
+.quadbordati{
+    
+
+}
+
+footer{
+    color: white;
+    background-color:#25a2c3; 
+    padding-bottom: 3em;
+    
+}
+
+footer h2{
+    font-weight: bold ;
+}
+
+footer div{
+    font-size:smaller ;
+}
+
+footer div p{
+    font-size: small;
+}
+
+hr{
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+}
+
+
+
