@@ -1,0 +1,76 @@
+/*RESPONSIVE = a seconda delle dimensioni della pagina visualizziamo una formattazione diversa*/
+
+.col{
+    background-color: red;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+/* creiamo un breakpoint.  se lo schermo supera 480px, scatta la regola del breakpoint, cioè il background diventa giallo.Sopra i 480px significa che stiamo specificando come deve aparire su tablec e pc.
+*/
+
+/* tutti questi breakpoint fanno si che a seconda delle dimensioni dello schermo (o meglio della finestra) abbiamo una formattazione diversa. Cambia la disposizione dei blocchi e il colore di background. */
+
+/*inline-block = elementi che si affiancano tra loro */
+
+ @media screen and (min-width: 480px)  {
+
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .col{
+        background-color: yellow;
+        width: calc(100% / 2 - 8px);
+        display: inline-block;
+        margin-bottom: 10px;
+    
+    }
+
+    #solodesktop{
+        display: block
+     }
+ }
+ /* questo seguente breakpoint vale per laptop*/
+
+ @media screen and (min-width: 768px) {
+
+    .col{
+        background-color: green;
+        width:  calc(100%/ 3 - 8px);
+
+    }
+    
+
+ }
+
+/* questo seguente breakpoint vale per laptop*/
+
+ @media screen and (min-width: 1440px) {
+
+    .col{
+        background-color: blue;
+        width:  calc(100%/ 4 - 8px);
+
+    }
+    
+ }
+
+ #test{
+    background-color: purple;
+    height: 50px;
+ }
+
+ @media print{
+    .test{
+        display: contents;
+        
+    }
+ }
+
+ 
+
+
+
+

@@ -1,0 +1,330 @@
+@media screen and (min-width: 320px) {
+
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+        text-align: center;
+        position: relative;
+        text-transform: uppercase;
+
+    }
+
+    header div>img {
+        padding-right: 10px;
+    }
+
+    main {
+        padding: 10%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: large;
+        text-transform: uppercase;
+
+        margin-bottom: 20px;
+
+    }
+
+    #autore {
+        text-align: center;
+
+    }
+
+    article p {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    #autore {
+        text-align: center;
+
+    }
+
+    table {
+        font-size: smaller;
+        border-radius: 2em;
+    }
+
+
+    aside div {
+        border-radius: 3em;
+    }
+}
+
+/* Schermo largo da 480px a 760px */
+
+@media screen and (min-width: 480px) {
+
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+        text-align: center;
+        position: relative;
+        text-transform: uppercase;
+
+    }
+
+    header div>img {
+        padding-right: 10px;
+    }
+
+    /* Rispetto al layout min 320px il padding è dimezzato*/
+    main {
+        padding: 5%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: large;
+        text-transform: uppercase;
+
+        margin-bottom: 20px;
+
+    }
+
+    #autore {
+        text-align: center;
+
+    }
+
+    article p {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    #autore {
+        text-align: center;
+
+    }
+
+
+
+
+    aside div {
+        border-radius: 2em;
+    }
+}
+
+/* Schermo largo da 760px */
+
+@media screen and (min-width: 760px) {
+
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+        text-align: center;
+        position: relative;
+        text-transform: uppercase;
+
+
+    }
+
+    header div>img {
+        padding-right: 10px;
+    }
+
+
+    main {
+        padding: 5%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: x-large;
+        text-transform: uppercase;
+
+        margin-bottom: 20px;
+
+    }
+
+    #autore {
+        text-align: center;
+
+    }
+
+    /* Nei paragrafi p figli di article ho ridotto il padding-top e padding-bottom da 5% a 2% rispetto al layout a 480px */
+
+    article p {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    #autore {
+        text-align: center;
+
+    }
+
+
+    /* ho ridotto i border-radius*/
+
+    aside div {
+        border-radius: 1.2em;
+    }
+}
+
+
+
+/* Schermo largo da 1024px */
+@media screen and (min-width: 1024px) {
+
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+        text-align: center;
+        position: relative;
+        text-transform: uppercase;
+
+
+    }
+
+    header div>img {
+        padding-right: 10px;
+    }
+
+
+    main {
+        padding: 5%;
+    }
+
+    /* rimuovo la centratura del titolo h1*/
+    h1 {
+        text-align: left;
+
+        font-size: x-large;
+        text-transform: uppercase;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    /* Nei paragrafi p figli di article ho ridotto il padding-top e padding-bottom da 5% a 2% rispetto al layout a 480px */
+
+    article p {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    #autore {
+        text-align: left;
+
+    }
+
+
+    /* ho ridotto i border-radius*/
+
+    aside div {
+        border-radius: 1.2em;
+    }
+
+    aside{
+        width: 100%;
+        margin: 0 auto;
+        
+
+    }
+
+    aside div {
+        width: calc(100% / 3 - 8px );
+        display: inline-block;
+        height: 10rem
+        
+    }
+}
+
+
+
+
+
+/* LAYOUT DI STAMPA. Per rimuovere le parti che non occorre avere nel layout di stampa, basta indicare il tag della porzione da eliminare e poi parentesi graffe, poi "display:none" */
+
+@media print {
+
+    html{
+        font-size: 1rem;
+    }
+
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+        display: none;
+    }
+       
+
+
+    main {
+        padding: 5%;
+    }
+
+    
+    h1 {
+        text-align: left;
+
+        font-size: x-large;
+        text-transform: uppercase;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    article p {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    #autore {
+        text-align: left;
+
+    }
+
+    section{
+        display: none;
+    }
+
+    iframe{
+        display: none;
+    }
+
+    aside{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+
+    .social{
+        display: none;
+    }
+
+    .toTop{
+        display: none;
+    }
+
+    main, footer {
+        box-shadow: none;
+    }
+
+   
+
+
+
+ 
+}
