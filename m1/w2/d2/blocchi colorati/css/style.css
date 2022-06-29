@@ -1,0 +1,44 @@
+.container{
+    width: 1000px;
+    position: relative;
+
+}
+
+.blocco-colorato{
+    width: 200px ;
+    height: 200px;
+    border: 1px dashed black;
+    position: absolute;
+    background-color: red;
+}
+
+.blocco-colorato:nth-last-of-type(1){
+    background-color: red;
+    z-index: 1;
+}
+
+.blocco-colorato:nth-last-of-type(2){
+    background-color: yellow;
+    z-index: 2;
+    left: 200px;
+    top: 200px;
+}
+.blocco-colorato:nth-last-of-type(3){
+    background-color: green;
+    z-index: 3;
+    left: 300px;
+    top: 300px;
+}
+.blocco-colorato:nth-last-of-type(4){
+    background-color: blue;
+    z-index: 4;
+    left: 400px;
+    top: 400px;
+}
+.blocco-colorato:nth-last-of-type(5){
+    background-color: purple;
+    z-index: 5;
+    left: 500px;
+    top: 500px;
+}
+

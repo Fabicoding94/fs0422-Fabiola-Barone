@@ -1,0 +1,120 @@
+
+nav ul > li{
+    display: inline-block;
+}
+
+/* Per fissare l'header in alto nella viwewport mentre scorro con la barra il testo uso:
+
+header{
+    position:-webkit-sticky ; 
+    position: sticky;
+    top: 0;
+ */
+
+header{
+    position:-webkit-sticky ; 
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+@media screen and (max-width: 760px){
+    header{
+        font-size: smaller;
+    }
+}
+
+
+#badge{
+    float: left;
+    border: 3px solid #00a0c6;
+    outline: 4px solid #a02571;
+    margin-bottom: 25px;
+    margin-right: 10px;
+}
+
+article div >p {
+    float: right;
+}
+
+
+/* Quando a section h2 attribuisco "position: relative" devo immaginare che a spostarsi è il box che ci sta sotto. Quindi per far si che si sposti in alto a sinistra, in realtà ho indicato lo spostamento relativo del parente (section), appunto verso sotto e verso destra. 
+
+Poi si è verificato un problema , ovvero che l'h2 (scritta "Novità"), quando scorrevo con la barra, andava a passare al di sopra dell'header. Allora ho usato la proprietà "z-index" su Header e Section H2. Ho dato il valore 1 a quello che sta sotto e 2 a quello che sta sopra (l'header) */
+
+section h2{
+    background-color: rgb(96, 95, 95);
+    margin-left: 75px;
+    margin-right: 75px;
+    
+    border: 1px solid black;
+    position: relative;
+    bottom: 25px;
+    right: 60px;
+    z-index: 1;
+    
+}
+
+.social1{
+    font-size: 1.3rem;
+    background-color: white;
+    text-align: right;
+    margin-right: 35px;
+    
+    
+    
+}
+
+.social1 i{
+    border: 3px solid blue;
+    color: blue;
+    padding: 1rem;
+    position: fixed;
+    top: 300px;
+    border-radius: 1rem;
+    
+    
+    
+    
+}
+
+.social2{
+    font-size: 1.3rem;
+    background-color: white;
+    text-align: right;
+    margin-right: 35px
+    ;
+    
+}
+
+.social2 i{
+    border: 3px solid blue;
+    border-radius: 1rem;
+    color: blue;
+    padding: 1rem;
+
+    position: fixed;
+    top: 350px;
+}
+
+
+
+.toTop{
+    font-size: 1.3rem;
+    background-color: white;
+    
+    text-align: right;
+    margin-right: 35px
+    
+}
+
+.toTop i{
+    
+    color: blueviolet;
+    border: 3px solid blueviolet;
+    padding: 1rem;
+    position: fixed;
+    top: 550px;
+    border-radius: 1rem;
+}
