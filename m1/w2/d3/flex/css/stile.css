@@ -1,0 +1,255 @@
+h3{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    border-top: 1px solid black;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Flex direction row -> riga; column-> colonna */
+
+.blocco{
+    height: 100px;
+    width: 150px;
+    background-color: #ccc;
+    border: 1px solid #fff;
+}
+
+#n2{
+    flex-direction: column;
+}
+
+#n3{
+    flex-direction: row-reverse;
+}
+
+#n4{
+    flex-direction: column-reverse;
+}
+
+/* n5 -> il no wrap èdi default */
+
+#n6 {
+    flex-wrap: wrap;
+}
+
+/* Il flex-wrap: wrap fa si che gli elementi prendano il loro spazio senza essere ridimensionati. Qualora eccedano la dim del genitore, vanno a capo */
+
+#n6 .blocco{
+    width: calc(100% / 6);
+}
+
+/* con width: calc(100% / 6) dividiamo in 6 */
+
+#n7{
+    flex-wrap: wrap-reverse;
+}
+
+/* Justofy content -> allineamento verticale */
+
+#n8{
+    justify-content: flex-start;
+}
+
+#n9{
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#n10{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#n11{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#n12{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#n13{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* ripartisce in maniera equa gli spazi, c'è più spazio tra bordo e colonna, rispetto a "space-around". */
+}
+
+#n14{
+    flex-wrap: wrap;
+    
+    align-items: flex-start;
+    /* fa si che gli elementi si posizionino allo start verticale, sul cross start
+    
+    gli elementi di dimensione differente non si adatteranno in base alle dim degli altre elementi della riga*/
+}
+
+#n14 .blocco:first-child{
+    height: 100px;
+}
+
+#n15{
+    
+    
+    align-items: flex-end;
+    background-color: aqua;
+    
+}
+
+#n15 .blocco:first-child{
+    height: 200px;
+}
+
+#n16{
+    
+   
+    align-items: center;
+    background-color: aqua;
+    
+}
+
+#n16 .blocco:first-child{
+    height: 200px;
+}
+
+
+#n17{
+    height: 200px;
+    align-items: stretch;
+    background-color: aqua;
+    }
+
+#n18{
+    height: 200px;
+    align-items: baseline;
+    background-color: aqua;
+    }
+
+#n19{
+    height: 300px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: aqua;
+}
+#n20{
+    height: 300px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    background-color: aqua;
+}
+#n21{
+    height: 300px;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: aqua;
+}
+
+#n21 .blocco:nth-child(2){
+    height: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+
+
+#n22{
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+    height: 488px;
+    background-color: rgb(23, 287, 287);
+}
+
+#n23{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    height: 488px;
+    background-color: rgb(23, 287, 287);
+}
+
+#n24{
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    height: 488px;
+    background-color: rgb(23, 287, 287);
+}
+
+#n25{
+    display: flex;
+    
+    flex-wrap: wrap;
+    height: 488px;
+    
+}
+
+#n25 .blocco:nth-child(1){
+    order: 6 ;
+}
+
+#n25 .blocco:nth-child(2){
+    order: 2 ;
+}
+
+#n25 .blocco:nth-child(3){
+    order: 3 ;
+}
+
+#n26 .blocco{
+    flex-grow: 1;
+
+}
+
+#n26 .blocco:nth-child(1){
+    flex-grow: 2;
+    /* il primo elemento del blocco 26 si prende uno spazio che è doppi rispetto a quello che occupa ciascuno degli altri due */
+}
+
+#n27 .blocco{
+    width: 300px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    
+}
+
+#n27 .blocco:nth-child(1){
+    flex-shrink: 4;
+}
+
+#n27 .blocco:nth-child(2){
+    flex-shrink: 2;
+}
+
+#n28 .blocco{
+    flex-basis: 30%;
+}
+
+#n29 .blocco{
+    flex: 1 1 auto ;
+}
+
+#n29 .blocco:nth-child(1){
+    flex-basis: 30%;
+}
+
+#n29 .blocco:nth-child(2){
+    flex-shrink: 5;
+}
+#n29 .blocco:nth-child(3){
+    flex-grow: 2;
+}
+
+

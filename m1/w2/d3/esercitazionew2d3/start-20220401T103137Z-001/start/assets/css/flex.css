@@ -1,0 +1,95 @@
+ @media screen and (min-width: 500px) {
+
+     header div {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+     }
+
+     #container-aside {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         background-color: white;
+         border: 0px;
+     }
+
+     .blocco-aside {
+
+         padding-left: 1.2rem;
+         padding-right: 1.2rem;
+         font-size: small;
+     }
+
+     .blocco-aside:nth-child(1) {
+
+         margin-right: 1rem;
+         flex-grow: 1;
+     }
+
+     .blocco-aside:nth-child(2) {
+         margin-left: 1rem;
+         margin-right: 1rem;
+         flex-grow: 1;
+     }
+
+     .blocco-aside:nth-child(3) {
+
+         margin-left: 1rem;
+         flex-grow: 1;
+     }
+
+ }
+
+ @media screen and (min-width: 800px) {
+
+     #container-aside {
+         display: flex;
+         flex-direction: column;
+         align-content: space-between;
+         background-color: white;
+         border: 0px;
+     }
+
+     .blocco-aside:nth-child(1) {
+
+         margin-left: 1rem;
+
+     }
+
+
+
+     .blocco-aside:nth-child(3) {
+
+         margin-right: 1rem;
+
+     }
+
+     #big-container {
+         display: flex;
+         flex-direction: row;
+         width: 100%;
+
+
+
+     }
+
+     article {
+         
+         padding-right: -3rem;
+         padding-left: -3rem ;
+     }
+
+     aside {
+        width:60rem;
+         
+         margin-right: -2rem;
+         margin-left: -2rem;
+     }
+
+     aside h2{
+        font-size: smaller;
+        margin-top: 25px;
+     }
+
+ }

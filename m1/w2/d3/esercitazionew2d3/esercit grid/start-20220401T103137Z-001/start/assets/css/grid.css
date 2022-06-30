@@ -1,0 +1,44 @@
+
+
+article{
+    grid-area: article;
+}
+
+section{
+    grid-area: section;
+}
+
+aside{
+    grid-area: aside;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "article article article aside"
+    "article article article section"
+    "article article article ."
+}
+
+aside{
+    margin-left: 3rem;
+    
+}
+
+aside h2{
+    font-size: 1.5rem;
+}
+
+#container-aside{
+    background-color: white;
+    border: 0;
+}
+
+section{
+    margin-left: 3rem;
+    margin-top: 5rem;
+    position: sticky;
+    top: 300px;
+  
+}
