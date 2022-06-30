@@ -1,0 +1,69 @@
+
+
+#area-trasformazione{
+    perspective: 100000px;
+    height: 100vh;
+    transform-style: preserve-3d ;
+}
+
+#cubo{
+    transform: rotateY(30deg);
+    transform-style: preserve-3d ;
+    position: relative;
+    margin-left: 200px;
+    margin-top: 200px ;
+    height: 200px;
+    width: 200px;
+    animation-name: cubo;
+    animation-duration: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cubo{
+    0%{ transform: rotateZ(0deg) rotateY(0deg) rotateX(0deg);}
+    50%{ transform: rotateZ(360deg) rotateY(360deg) rotateX(360deg);}
+    100%{ transform: rotateZ(0deg) rotateY(0deg) rotateX(0deg);}
+}
+
+.faccia{
+    background-color: #ccc;
+    width: 200px;
+    height:200px ;
+    position: absolute;
+    border: 1px solid black;
+}
+
+#sx{
+    left: -200px;
+    transform: rotateY(90deg);
+    transform-origin: right;
+}
+
+#dx{
+    right: -200px;
+    transform: rotateY(-90deg);
+    transform-origin: left;
+}
+
+#top{
+    right: -200px;
+    transform: rotateY(-90deg);
+    transform-origin: bottom;
+}
+
+#bottom{
+    right: -200px;
+    transform: rotateX(90deg);
+    transform-origin: top;
+}
+
+#retro{ 
+    background-color: grey;
+
+}
+
+#front{
+    transform: translateZ(200px);
+    z-index: 1;
+    background-image: url;
+}

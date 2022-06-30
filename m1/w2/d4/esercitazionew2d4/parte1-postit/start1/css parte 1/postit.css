@@ -1,0 +1,95 @@
+
+@media screen and (min-width:1200px) {
+
+
+    .grid{
+        background-color: rgb(95, 93, 93);
+        width: 1300px;
+        height: 600px ;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+    
+        display: grid;
+        grid-template-columns: 300px 300px 300px 300px ;
+        grid-template-rows: 300px 300px;
+        justify-content: space-evenly ;
+        
+    }
+    
+    .postit{
+        height: 220px;
+        width: 270px;
+        text-align: center;
+        background-color: white;
+        box-shadow: 7px 7px 5px rgb(63, 63, 63), inset 0px -50px 30px rgba(173, 172, 172, 0.7);
+        
+    }
+    
+    
+        
+    
+    
+    .postit>h2,p{
+        margin-top: 70px;
+        
+        font-family: 'Indie flower', cursive;
+        
+        
+    }
+    
+    h2{ font-weight: bold;
+        font-size: 2.5rem;
+    }
+    
+    p{
+        margin-top: 25px;
+        font-size: 1.2rem;
+    }
+    
+    #p1, #p5, #p7{
+    
+        background-color: rgb(251, 251, 134);
+        transform: rotate(-7deg);
+    }
+    
+    #p2, #p4, #p8{
+    
+        background-color: rgb(191, 252, 185);
+        transform: rotate(7deg);
+    }
+    
+    #p3, #p6{
+    
+        background-color: rgb(196, 176, 218);
+        transform: rotate(-8deg);
+        transition-property: width, height;
+        transition-duration: 3s;
+        
+    }
+    
+    #p1:hover, #p2:hover, #p3:hover, #p4:hover, #p5:hover,#p6:hover,#p7:hover, #p8:hover{
+        transform: scale(1.2) rotateZ(0deg);
+        
+    }
+    
+    
+}
+
+/*  #n6{
+    transform: transform 5s ;
+    transition-delay: 1s, 0s;
+    background-color: 2s;
+} 
+
+/* tempi di transizione; transition delay: ritardo / 
+
+#n6:hover{
+    transform: skew(10deg) scale(1.5) rotate(30deg)  ;
+    background-color: yellow;
+}
+*/
+
+
+

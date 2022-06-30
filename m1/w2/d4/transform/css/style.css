@@ -1,0 +1,52 @@
+#transform-area{
+    perspective: 400px;
+    background-color: black;
+    height: 100vh;
+}
+
+/* */
+
+
+
+.quadrato{
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+    color: white;
+    background-color: red;
+    font-size: 3rem;
+}
+
+#n1{
+    transform: rotate(30deg);
+}
+/* di default ruota sull'asse "Z" se non specifico */
+
+#n2{
+    transform: rotateX(100deg);
+}
+
+
+#n3{
+    transform: rotateY(45deg);
+}
+
+#n4{
+    transform: scale(0.5) rotate(30deg);
+} /* scale= ridimensiona */
+
+#n5{
+    transform: skewx(65deg);
+}
+
+#n6{
+    transform: transform 5s ;
+    transition-delay: 1s, 0s;
+    background-color: 2s;
+} /* tempi di transizione; transition delay: ritardo  */
+
+#n6:hover{
+    transform: skew(10deg) scale(1.5) rotate(30deg)  ;
+    background-color: yellow;
+}
+

@@ -1,0 +1,261 @@
+/*
+1 creazione del testo e formattazione di 1 parola da far ruotare
+2 inserimento delle altre 2 parole
+3 sovrapporre le 3 parole
+4 mostrare 1 parola e nascondere le altre 2
+5 animare 1 parola (fadein - fadeout con spostamento)
+6 animare le altre 2 parole
+7 ritardare progressivamente l'animazione delle altre 2 parole 
+*/
+
+@media screen and (min-width:1200px) {
+
+    body {
+        height: 800px;
+        width: 1300px;
+
+
+        background-color: white;
+    }
+
+    main {
+        text-align: center;
+        margin-top: 50vh;
+        margin-bottom: 50vh;
+        margin: 50vh 10vw 50vh 10vw;
+        padding: 40px 40px 40px 40px;
+        border: 2px solid black;
+
+        font-family: 'Bree serif';
+        font-size: 5vh;
+
+    }
+
+    p {
+        text-align: left;
+        line-height: 8vh;
+    }
+
+    .parole {
+        color: rgb(106, 168, 209);
+
+
+    }
+
+
+
+    #parola1 {
+        position: relative;
+        top: -49px;
+        animation-name: animazione1;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+    }
+
+    #parola2 {
+        position: relative;
+        top: -87px;
+        left: 13px;
+        animation-name: animazione2;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+
+    }
+
+    #parola3 {
+        position: relative;
+        top: -127px;
+        right: 13px;
+        animation-name: animazione3;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes animazione1 {
+
+        from {
+            color: rgba(106, 168, 209, 0.5);
+            position: absolute;
+            margin-top: 400px;
+
+        }
+
+        14% {
+            color: rgba(106, 168, 209, 1);
+            position: absolute;
+            margin-top: 550px;
+        }
+
+        28% {
+            color: rgba(106, 168, 209, 0.5);
+            position: absolute;
+            margin-top: 620px;
+        }
+
+        43% {
+            color: white;
+            position: absolute;
+            margin-top: 700px;
+
+        }
+
+        57% {
+            color:white;
+            position: absolute;
+            margin-top: 720px;
+        }
+
+        70% {
+            color: white;
+            position: absolute;
+            margin-top: 730px;
+        }
+
+        84% {
+            color: white;
+            position: absolute;
+            margin-top: 750px;
+        }
+
+        100% {
+            color: white;
+            position: absolute;
+            margin-top: 760px;
+        }
+    }
+
+
+    @keyframes animazione2 {
+
+
+        
+        from {
+            color: white;
+            position: absolute;
+            margin-top: 300px;
+            margin-left: 600px;
+
+        }
+
+        14% {
+            color: white;
+            position: absolute;
+            margin-top: 350px;
+            margin-left: 600px;
+        }
+
+        28% {
+            color: white;
+            position: absolute;
+            margin-top: 350px;
+            margin-left: 600px;
+        }
+
+        43% {
+            color: rgba(106, 168, 209, 0.5);
+            position: absolute;
+            margin-top: 550px;
+            margin-left: 600px;
+
+        }
+
+        57% {
+            color: rgba(106, 168, 209, 1);
+            position: absolute;
+            margin-top: 600px;
+            margin-left: 600px;
+        }
+
+        70% {
+            color:rgba(106, 168, 209, 0.5);
+            position: absolute;
+            margin-top: 620px;
+            margin-left: 600px;
+        }
+        84% {
+            color: white;
+            position: absolute;
+            margin-top: 810px;
+            margin-left: 600px;
+        }
+
+        100% {
+            color: white;
+            position: absolute;
+            margin-top: 820px;
+            margin-left: 600px;
+        }
+
+    }
+
+
+    @keyframes animazione3 {
+
+        from {
+            color: white;
+            position: absolute;
+            margin-top: 100px;
+            margin-right: 400px;
+
+        }
+
+        14% {
+            color: white;
+            position: absolute;
+            margin-top: 200px;
+            margin-right: 400px;
+        }
+
+        28% {
+            color: white;
+            position: absolute;
+            margin-top: 220px;
+            margin-right: 400px;
+        }
+
+        43% {
+            color: white;
+            position: absolute;
+            margin-top: 250px;
+            margin-right: 400px;
+
+        }
+
+        57% {
+            color: white;
+            position: absolute;
+            margin-top: 300px;
+            margin-right: 400px;
+        }
+
+
+        70% {
+            color: rgba(106, 168, 209, 0.5);
+            position: absolute;
+            margin-top: 550px;
+            margin-right: 400px;
+
+        }
+
+        84% {
+            color: rgba(106, 168, 209, 1);
+            position: absolute;
+            margin-top: 650px;
+            margin-right: 400px;
+        }
+
+        100% {
+            color: rgba(106, 168, 209, 0.5);
+            position: absolute;
+            margin-top: 680px;
+            margin-right: 400px;
+        }
+    }
+
+
+
+
+
+
+}

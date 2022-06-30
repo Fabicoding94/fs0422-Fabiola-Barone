@@ -63,3 +63,10 @@ h3{
 #n3 .blocco:nth-child(4){
     grid-area: footer ;
 }
+
+#n4{
+    grid-template-columns: repeat(3, 1fr) minmax(20px, 40px);
+    grid-template-rows: repeat(2, 100px) 300px ;
+    grid-gap: 20px;
+    justify-content: space-between;
+}

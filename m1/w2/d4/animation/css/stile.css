@@ -1,0 +1,168 @@
+#transform area {
+    background-color: black;
+    height: 100vh;
+    perspective: 400px;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    will-change: transform;
+}
+
+.quadrato {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin-bottom: 20px;
+}
+
+#n1 {
+    animation-name: animazione1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animazione {
+    from {
+        background-color: red
+    }
+
+    to {
+        background-color: yellow
+    }
+
+}
+
+#n2 {
+    animation-name: animazione2;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animazione2 {
+    from {
+        background-color: red
+    }
+
+    50% {
+        background-color: yellow
+    }
+
+    to {
+        background-color: red
+    }
+
+}
+
+#n3 {
+    animation-name: animazione3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animazione3 {
+    0% {
+        transform: translate(0%, 0%) rotateY(0);
+        background-color: red;
+    }
+
+    25% {
+        transform: translate(20%, 10%) rotateY(30deg);
+        background-color: blue;
+    }
+
+    50% {
+        transform: translate(80%, 50%) rotateY(300deg);
+        background-color: white;
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotateY(0);
+        background-color: red;
+    }
+}
+
+#n4 {
+    animation-name: animazione4;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animazione4 {
+    0% {
+        transform: translate(0%, 0%) rotateY(0);
+        background-color: red;
+    }
+
+    25% {
+        transform: translate(20%, 10%) rotateY(30deg);
+        background-color: blue;
+    }
+
+    50% {
+        transform: translate(80%, 50%) rotateY(300deg);
+        background-color: white;
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotateY(0);
+        background-color: red;
+    }
+
+}
+
+#n5 {
+    animation-name: animazione5;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes animazione5 {
+
+    0% {
+        margin-left: 0;
+    }
+
+    50% {
+        margin-left: 90%;
+    }
+
+    70% {
+        margin-left: 0;
+    }
+
+}
+
+#n6 {
+    animation-name: animazione6;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    ;
+}
+
+@keyframes animazione6 {
+
+    0% {
+        transform: translateZ(0);
+    }
+
+    50% {
+        transform: translateZ(-700px);
+    }
+
+    100% {
+        transform: translateZ(0);
+    }
+
+}
+
+#n7 {
+position: absolute;
+left: 100px;
+top: 200px;
+background-color:yellow ;
+transform: translate(-1) rotateY(-30deg);
+   
+}
