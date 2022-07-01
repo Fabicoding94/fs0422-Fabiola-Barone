@@ -1,0 +1,264 @@
+/* IMPOSTAZIONI GENERALI */
+
+body{
+    color: #000;
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.6rem;
+}
+
+/* HEADER */
+
+header{
+    background-color: white;
+    box-shadow: #d3d3d3;
+}
+
+/* MAIN */
+
+
+
+
+tbody tr:nth-child(odd){
+    background-color: #d2dce7;
+}
+
+
+article section{
+    background-color: #0c0633 ;
+    color: white;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(238, 238, 238);
+}
+
+/* button{
+    background-color: linear-gradient(top right, #6cc1e2 40%, #392f7a 60%);
+    border: 1px solid black;
+}
+  */
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 320px){
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        font-size: 0.7rem;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        border: grey;
+        box-shadow: 2px 2px 3px gray;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    nav li >a{
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        border: #000;
+
+    }
+
+    nav ul{
+        overflow: hidden;
+        height: 0;
+    }
+
+    nav:hover > ul{
+        height: auto;
+        color: white;
+        width: 5rem;
+        height: auto;
+        border: #000;
+    }
+
+    ul li:hover > a {
+       
+        transition-duration: 0.3s;
+        transform: color;
+        background-color: lightblue;
+    }
+
+    img{
+        width: 150px;
+        height: auto;
+    }
+
+   body{
+    font-size: 16px ;
+    text-align: center;
+    
+   }
+
+
+
+   #sezione1{
+    text-align: left;
+    margin-top: -20px;
+    margin-bottom: 60px;
+    background-image: url(../images/banner.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position-x: center;
+    height: auto;
+    width: auto;
+    padding: 1.5rem;
+    line-height: 2rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px black;
+    z-index: 0;
+    
+   }
+
+   .pulsanti{
+
+    width: 100px;
+    height: 35px;
+    background-image: linear-gradient(to right, #6cc1e2 0%, #392f7a 100%);
+    z-index: 1;
+    border: 1px solid black;
+    text-align: center;
+    }
+
+    .pulsanti a{
+        color: white;
+        text-decoration: none;
+    }
+
+
+#pulsante2{
+   
+    width: 100px;
+    height: 35px;
+    background-image: linear-gradient(to right, #6cc1e2 0%, #392f7a 100%);
+    z-index: 1;
+    border: 1px solid black;
+    text-align: center;
+    position: relative;
+    
+
+}
+
+#pulsante2 a{
+    color: white;
+    text-decoration: none;
+}
+    
+   }
+
+   #sezione1 h1{
+    line-height: 3rem ;
+   }
+
+   .paragrafi{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem ;
+    font-size: 0.9rem;
+   }
+
+   article{
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+   }
+
+   h1{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+   }
+
+
+   h2, h3, h4{
+    font-weight: bold;
+   }
+
+   h2{
+    font-size: 2rem;
+   }
+
+   h3{
+    font-size: 1.2rem;
+   }
+
+   #section2{
+    padding-top: 3rem ;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    line-height: 2rem;
+   }
+
+   div{
+    text-align: center;
+    
+   }
+
+   .immaginepc{
+    width: 300px;
+    height: auto;
+    margin-right: 15px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+   }
+
+   /* FOOTER */
+   footer{
+    padding-top: 30px;
+    text-align: left;
+    padding: 2rem;
+   }
+
+   footer h4{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.2rem;
+   }
+
+   footer h5{
+    font-size: 0.7rem;
+    line-height: 1rem;
+    margin-top: 30px;
+   }
+
+   #icona{
+    color: red;
+    font-size: xx-large;
+   
+   }
+
+   #barramenu li > ul{
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: darkgreen;
+    width: 200px;
+    transition: height 0.3s;
+}
+#barramenu li:hover > ul{
+   height: 150px;
+}
+   
+/* PAGINA Chi siamo */
+
+
+   
+
+  
+
+
+    

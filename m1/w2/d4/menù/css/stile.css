@@ -1,0 +1,80 @@
+#main-header{
+    background-color:darkgreen;
+    height: 50px;
+    text-align:center;
+}
+
+#menu > li{
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+#menu li:hover{
+    background-color:#fff;
+}
+#menu li:hover > a{
+    color:darkgreen;
+}
+
+#menu > li, #menu, #main-header nav{
+    height: 100%;
+}
+
+#main-header a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+    line-height: 50px;
+    display: block
+}
+
+/*sotto-menu*/
+
+
+#menu li > ul{
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: darkgreen;
+    width: 200px;
+    transition: height 0.3s;
+}
+#menu li:hover > ul{
+   height: 150px;
+}
+
+@media screen and (max-width:768px){
+
+    #main-header{
+        height: auto;
+    }
+
+    #menu{
+        height: 0;
+        transition: all 0.3s;
+        overflow: hidden;
+    }
+
+    label[for="toggle"]{
+        cursor: pointer;/*appare la manina*/
+    }
+
+    input[type="checkbox"]{
+        display: none;/*nascondo la checkbox*/
+    }
+    input[type="checkbox"]:checked + #menu{
+        height: 150px;
+    }
+
+    #menu > li{
+        height: 50px;
+    }
+
+    #menu li{
+        display: block;
+    }
+    #menu li > ul{
+        display: none;
+    }
+
+}
