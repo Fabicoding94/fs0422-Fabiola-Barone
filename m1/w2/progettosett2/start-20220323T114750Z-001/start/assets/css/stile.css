@@ -1,6 +1,6 @@
 /* IMPOSTAZIONI GENERALI */
 
-body{
+body {
     color: #000;
     font-size: 1.5rem;
     font-family: 'Fira Sans', sans-serif;
@@ -9,7 +9,7 @@ body{
 
 /* HEADER */
 
-header{
+header {
     background-color: white;
     box-shadow: #d3d3d3;
 }
@@ -19,13 +19,13 @@ header{
 
 
 
-tbody tr:nth-child(odd){
+tbody tr:nth-child(odd) {
     background-color: #d2dce7;
 }
 
 
-article section{
-    background-color: #0c0633 ;
+article section {
+    background-color: #0c0633;
     color: white;
 }
 
@@ -33,7 +33,7 @@ article section{
 
 /* FOOTER */
 
-footer{
+footer {
     background-color: rgb(238, 238, 238);
 }
 
@@ -45,9 +45,9 @@ footer{
 
 /* RESPONSIVE */
 
-@media screen and (min-width: 320px){
+@media screen and (min-width: 320px) {
 
-    header{
+    header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -61,7 +61,8 @@ footer{
         top: 0;
         z-index: 10;
     }
-    nav li >a{
+
+    nav li>a {
         text-decoration: none;
         color: black;
         background-color: white;
@@ -69,12 +70,12 @@ footer{
 
     }
 
-    nav ul{
+    nav ul {
         overflow: hidden;
         height: 0;
     }
 
-    nav:hover > ul{
+    nav:hover>ul {
         height: auto;
         color: white;
         width: 5rem;
@@ -82,63 +83,77 @@ footer{
         border: #000;
     }
 
-    ul li:hover > a {
-       
+    ul li:hover>a {
+
         transition-duration: 0.3s;
         transform: color;
         background-color: lightblue;
     }
 
-    img{
+    img {
         width: 150px;
         height: auto;
     }
 
-   body{
-    font-size: 16px ;
-    text-align: center;
-    
-   }
+    body {
+        font-size: 16px;
+        text-align: center;
 
-
-
-   #sezione1{
-    text-align: left;
-    margin-top: -20px;
-    margin-bottom: 60px;
-    background-image: url(../images/banner.jpg);
-    background-repeat:no-repeat ;
-    background-size: cover;
-    background-position-x: center;
-    height: auto;
-    width: auto;
-    padding: 1.5rem;
-    line-height: 2rem;
-    color: white;
-    font-weight: bold;
-    text-shadow: 4px 4px 4px black;
-    z-index: 0;
-    
-   }
-
-   .pulsanti{
-
-    width: 100px;
-    height: 35px;
-    background-image: linear-gradient(to right, #6cc1e2 0%, #392f7a 100%);
-    z-index: 1;
-    border: 1px solid black;
-    text-align: center;
     }
 
-    .pulsanti a{
+
+
+    #sezione1 {
+        text-align: left;
+        margin-top: -20px;
+        margin-bottom: 60px;
+        background-image: url(../images/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        height: auto;
+        width: auto;
+        padding: 1.5rem;
+        line-height: 2rem;
         color: white;
-        text-decoration: none;
+        font-weight: bold;
+        text-shadow: 4px 4px 4px black;
+        z-index: 0;
+
+    }
+
+    .pulsanti {
+
+        width: 100px;
+        height: 35px;
+        background-image: linear-gradient(to right, #6cc1e2 0%, #392f7a 100%);
+        z-index: 1;
+        border: 1px solid black;
+        text-align: center;
+
+    }
+
+    .pulsanti:hover a {
+
+        color: #392f7a;
+        background-color: (white);
+        transition-duration: 2s;
     }
 
 
-#pulsante2{
-   
+}
+
+
+
+
+.pulsanti a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#pulsante2 {
+
     width: 100px;
     height: 35px;
     background-image: linear-gradient(to right, #6cc1e2 0%, #392f7a 100%);
@@ -146,102 +161,293 @@ footer{
     border: 1px solid black;
     text-align: center;
     position: relative;
-    
+
 
 }
 
-#pulsante2 a{
+#pulsante2 a {
     color: white;
     text-decoration: none;
+
+
+
 }
-    
-   }
 
-   #sezione1 h1{
-    line-height: 3rem ;
-   }
+footer input {
+    width: 150px;
+    height: 40px;
+}
 
-   .paragrafi{
+footer button {
+    width: 150px;
+    height: 40px;
+    background-image: linear-gradient(to right, #6cc1e2 0%, #392f7a 100%);
+
+}
+
+/* PAGINA Chi siamo */
+
+.immag {
+    width: 280px;
+    ;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#tabella {
+    display: grid;
+    grid-template-columns: repeat(2, 0.8fr);
+    grid-template-rows: repeat(9, 0.8fr);
+    border: 1px solid black;
+}
+
+#tabella div {
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 5px;
+
+}
+
+.itembold {
+    font-weight: bold;
+    padding: 7px;
+}
+
+#item1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+}
+
+#item2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+}
+
+#item3 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+
+}
+
+#item1-2 {
+    grid-column-start: 1;
+    grid-row-start: 4;
+
+}
+
+#item22 {
+    grid-column-start: 1;
+    grid-row-start: 5;
+
+}
+
+#item32 {
+    grid-column-start: 1;
+    grid-row-start: 6;
+
+}
+
+#item13 {
+    grid-column-start: 1;
+    grid-row-start: 7;
+
+}
+
+#item23 {
+    grid-column-start: 1;
+    grid-row-start: 8;
+
+}
+
+#item33 {
+    grid-column-start: 1;
+    grid-row-start: 9;
+
+}
+
+#item4 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+}
+
+#item5 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+
+}
+
+#item6 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+
+}
+
+#item7 {
+    grid-column-start: 2;
+    grid-row-start: 4;
+
+}
+
+#item8 {
+    grid-column-start: 2;
+    grid-row-start: 5;
+
+}
+
+#item9 {
+    grid-column-start: 2;
+    grid-row-start: 6;
+
+}
+
+#item10 {
+    grid-column-start: 2;
+    grid-row-start: 7;
+
+}
+
+#item11 {
+    grid-column-start: 2;
+    grid-row-start: 8;
+
+}
+
+#item12 {
+    grid-column-start: 2;
+    grid-row-start: 9;
+
+}
+
+#item1,
+#item2,
+#item3,
+#item4,
+#item5,
+#item6,
+#item13,
+#item23,
+#item33,
+#item10,
+#item11,
+#item12 {
+    background-color: lightblue;
+}
+
+/* Pagina Contatti */
+
+
+form {
+    margin: 30px 0 60px 0;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background-image: linear-gradient(to right, #6cc1e2 0%, #392f7a 100%);
+    color: white;
+
+}
+
+.input3 {
+    width: 280px;
+    height: auto;
+}
+
+
+
+
+
+#sezione1 h1 {
+    line-height: 3rem;
+}
+
+.paragrafi {
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem ;
+    margin-bottom: 1.5rem;
     font-size: 0.9rem;
-   }
+}
 
-   article{
+article {
     margin-left: 5vw;
     margin-right: 5vw;
 
-   }
+}
 
-   h1{
+h1 {
     font-size: 2.5rem;
     line-height: 2.5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-   }
+}
 
 
-   h2, h3, h4{
+h2,
+h3,
+h4 {
     font-weight: bold;
-   }
+}
 
-   h2{
+h2 {
     font-size: 2rem;
-   }
+}
 
-   h3{
+h3 {
     font-size: 1.2rem;
-   }
+}
 
-   #section2{
-    padding-top: 3rem ;
+#section2 {
+    padding-top: 3rem;
     padding-bottom: 3rem;
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center;
     line-height: 2rem;
-   }
+}
 
-   div{
+div {
     text-align: center;
-    
-   }
 
-   .immaginepc{
+}
+
+.immaginepc {
     width: 300px;
     height: auto;
     margin-right: 15px;
     margin-top: 2rem;
     margin-bottom: 2rem;
 
-   }
+}
 
-   /* FOOTER */
-   footer{
+/* FOOTER */
+footer {
     padding-top: 30px;
     text-align: left;
     padding: 2rem;
-   }
+}
 
-   footer h4{
+footer h4 {
     margin-top: 15px;
     margin-bottom: 15px;
     line-height: 1.2rem;
-   }
+}
 
-   footer h5{
+footer h5 {
     font-size: 0.7rem;
     line-height: 1rem;
     margin-top: 30px;
-   }
+}
 
-   #icona{
+#icona {
     color: red;
     font-size: xx-large;
-   
-   }
 
-   #barramenu li > ul{
+}
+
+#barramenu li>ul {
     height: 0;
     overflow: hidden;
     position: absolute;
@@ -249,16 +455,7 @@ footer{
     width: 200px;
     transition: height 0.3s;
 }
-#barramenu li:hover > ul{
-   height: 150px;
+
+#barramenu li:hover>ul {
+    height: 150px;
 }
-   
-/* PAGINA Chi siamo */
-
-
-   
-
-  
-
-
-    
