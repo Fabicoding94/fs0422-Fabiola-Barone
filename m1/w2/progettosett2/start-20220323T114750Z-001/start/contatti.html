@@ -11,66 +11,114 @@
   <link rel="stylesheet" href="assets/css/stile.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
 
-<script src="https://kit.fontawesome.com/e0ee163086.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e0ee163086.js" crossorigin="anonymous"></script>
 </head>
 
 <header>
   <div>
     <img src="assets/images/logo.png" alt="logo del blog" width="250" height="60">
   </div>
+
   <nav id="barramenu">
-    <i id="icona" class="fa-solid fa-ellipsis"></i>
-    <ul>
-      <li><a href="index.html" title="Home Page">Home</a></li>
-      <li><a href="chi-siamo.html" title="Elenco degli articoli tecnici pubblicati">Chi siamo</a></li>
-      <li><a href="contatti.html" title="Candidati inviando un tuo cv">Contatti</a></li>
-    </ul>
+
+
+    <i id="icona1" class="fa-solid fa-ellipsis"></i>
+    <div class="ul">
+      <div class="li"><a href="index.html" title="Home Page">Home</a></div>
+      <div class="li"><a href="chi-siamo.html" title="Elenco degli articoli tecnici pubblicati">Chi siamo</a></div>
+      <div class="li"><a href="contatti.html" title="Candidati inviando un tuo cv">Contatti</a></div>
+      <div id="pulsantereg" class="li"><a href="#">Registrati</a></div>
+
+
+    </div>
   </nav>
+
 </header>
 
-  <body>
-    <h1>Contatti</h1>
 
-    <form action="">
+<div id="box-z">
+
+  <body>
+
+
+    
+
+    <form class="box-z1">
+
+      <h1>Contatti</h1>
       <p><input class="input3" type="text" name="nome" placeholder="Nome e cognome"></p>
       <p><input class="input3" type="email" name="email" placeholder="Indirizzo valido nome@casella.com"></p>
-      <p><textarea class="input3" name="messaggio" id="" cols="30" rows="10" placeholder="Inserisci il tuo messaggio">Inserisci il messaggio</textarea></p>
+      <p><textarea class="input3" name="messaggio" id="" cols="30" rows="10"
+          placeholder="Inserisci il tuo messaggio">Inserisci il messaggio</textarea></p>
       <p><button type="submit">Invia il messaggio</button></p>
-    
+
     </form>
 
-    <aside>
+
+
+    <aside class="box-z1">
       <h2>Sede formativa</h2>
-      <div class="paragrafi"><p>Via Appia 1 </p>
+      <div class="paragrafi">
+        <p>Via Appia 1 </p>
         <p>00100 Roma (RM)</p><br>
         <p>info@epicode.school</p>
-        <p>+390612345956</p></div>
-      
+        <p>+390612345956</p>
+      </div>
+
 
       <h2>Lavora con noi</h2>
       <p class="paragrafi">Per poterti candidare ad un ruolo da docente invia il tuo cv a job@epicode.school </p>
     </aside>
+
+
   </body>
 
-  <footer>
-    <h4>Chi siamo</h4>
-    <p class="paragrafi">Epicode School nasce con l'obiettivo di rivoluzionare la formazione in ambito tech.</p>
-
-    <h4>Ti piace ciò che vedi? Condividilo con i tuoi amici!</h4>
-
-    <p><i id="icona" class="fa-brands fa-facebook-square"></i> <i id="icona" class="fa-brands fa-instagram"></i> <i id="icona" class="fa-brands fa-linkedin"></i></p>
 
 
-    <h4>Iscriviti alla nostra newsletter</h4>
-    <div><input type="email">
-      <button type="submit">Va bene!</button></div>
 
 
-    <h5>&copy;2021 Epicode Web Developer school - Via Appia 1. 00100 Roma (RM) - Tel.06-12345678</h5>
 
-  </footer>
+
+</div>
+
+
+
+
+
+<footer>
+  <div id="footerbox">
+    <div class="footerbox1">
+      <h4 class="footerbox1">Chi siamo</h4>
+      <p class="paragrafi">Epicode School nasce con l'obiettivo di rivoluzionare la formazione in ambito tech.</p>
+
+    </div>
+
+    <div class="footerbox1">
+      <h4>Ti piace ciò che vedi? Condividilo con i tuoi amici!</h4>
+
+      <p><i id="icona" class="fa-brands fa-facebook-square"></i> <i id="icona" class="fa-brands fa-instagram"></i>
+        <i id="icona" class="fa-brands fa-linkedin"></i>
+      </p>
+    </div>
+
+
+    <div class="footerbox1">
+
+      <h4>Iscriviti alla nostra newsletter</h4>
+      <div><input type="email">
+        <button type="submit">Va bene!</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <h5>&copy;2021 Epicode Web Developer school - Via Appia 1. 00100 Roma (RM) - Tel.06-12345678</h5>
+
+</footer>
 
 </html>
