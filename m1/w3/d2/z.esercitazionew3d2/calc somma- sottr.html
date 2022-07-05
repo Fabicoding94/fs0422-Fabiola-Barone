@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+</head>
+<body>
+
+
+
+    <section>
+
+        <form action=""></form>
+
+        <div id="elementi">
+
+            a: <input type="text" id="a">
+            b: <input type="text" id="b">
+
+            <div id="bottoni">
+                <input type="button" value="somma" onclick="somma();"  > <br>
+                <input type="button" value="sottrazione" onclick="sotrazione();"  > <br>
+
+                
+            </div>
+            risultato: <input type="text" id="risultato"> <br>
+
+
+
+
+        </div>
+
+        <script>
+        
+            function aggiungiNumero(bottone){
+                let display = document.getElementById('display')
+                console.log(display.value)
+                if(display.value[0] != 0){
+                    display.value += bottone.innerHTML
+                }else{
+                    display.value = bottone.innerHTML
+                }
+            }
+    
+            function reset(){
+                display.value = 0;
+            }
+    
+        </script>
+
+
+
+    </section>
+
+
+    
+</body>
+</html>

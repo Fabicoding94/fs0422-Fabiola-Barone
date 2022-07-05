@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        console.log(1 == 1)
+        console.log(1 === 1)
+        console.log(1 == '1')
+        console.log(1 === '1')
+
+
+        let a = 'ciao';
+        let b = 'Hi'
+        console.log(a != b)  //!= not uguale , restituisce true
+        console.log(a !== b)
+
+        let n = 10
+
+        console.log(n > 10)
+        console.log(n >= 10)
+        console.log(n > 10)
+        console.log(n <= 10)
+
+
+        console.log ( !(n <= 10))//l'operatore not ! inverte il valore di un dato booleano
+
+        console.log(n > 10 || n ==10); //true se una delle due cond è vera
+
+        console.log(n > 10 && n ==10); //true se entrambe le cond sono vere
+
+        /*
+        if
+        */
+
+
+        let condizione = false;
+        if(condizione){
+            console.log('vero')
+        }else{
+            console.log('falso')
+        }
+
+        let numero = 29;
+
+
+        //la prima cndizione risultante come vera blocca l'esecuzione dell'if
+        if (numero > 30){
+            console.log('ok')
+        }else if(numero == 30){
+            console.log('uguale')
+        }else{
+            //nel caso in cui le cond non risultino vere viene eseguito l'else
+            console.log('inferiore')
+        }
+
+
+        let h = 'ciao';
+        let l = 'ciao1';
+        if(h=1) {
+            console.log('vero')
+            console.log(h, 1)
+
+        }
+            
+            
+            let num = 0;
+            if(num){
+                console.log('test')
+            }
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

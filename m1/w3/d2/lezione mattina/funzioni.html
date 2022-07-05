@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+
+        //funzione che esegue
+
+        function saluta() {
+
+            alert('ciao')
+        }
+
+        //saluta();
+
+        function ottieniSaluto() {
+            return 'ciao';
+        }
+
+        let saluto = ottieniSaluto();
+        console.log(saluto)
+
+
+        function salutaPro(testo) {
+            alert(testo)
+        }
+
+        //salutaPro('ciao');
+
+        function creaTag(testo,tag){
+            return '<'+ tag + '>' + testo + '</'+ tag + '>';
+
+        
+        }
+
+        let grassetto = creaTag('prova', 'b')
+        let corsivo = creaTag('prova2', 'i')
+        console.log(grassetto, corsivo);
+
+        document.write( creaTag('prova', 'b'));
+
+        function somma(a,b){
+            return a + b;
+        }
+
+        console.log( somma(450,60))
+
+
+    </script>
+</body>
+
+</html>

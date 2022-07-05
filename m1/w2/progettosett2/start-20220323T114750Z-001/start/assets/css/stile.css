@@ -149,13 +149,13 @@ footer {
         box-shadow: 1px 1px 1px black;
         text-align: center;
         transition-property: background-image, box-shadow;
-        transition-duration: 0.1s;
+        transition-duration: 0.3s;
 
     }
 
     .pulsanti:hover {
         background-image: linear-gradient(to right, #aad8ea 0%, #ada5e5 100%);
-        box-shadow: 2px 2px 2px black;
+        box-shadow: 10px 10px 5px grey;
     }
 
 
@@ -187,8 +187,11 @@ footer {
 
 
 
+
+
+
     footer input {
-        width: 150px;
+        width: 143px;
         height: 40px;
     }
 
@@ -197,24 +200,40 @@ footer {
         flex-direction: column;
 
 
+
     }
 
 
+    
 
-    footer .pulsanti{
+
+    footer .pulsanti {
         width: 150px;
         height: 40px;
-       
+
+
 
     }
 
-    .footerbox1 > div{
+    .footerbox1>.pulsanti {
         width: 150px;
         height: auto;
-        margin-left: 35vw;
+        border: 1px solid black;
+
 
 
     }
+
+    .footerbox1 div {
+        width: 100vw;
+
+    }
+
+    #ft {
+        text-align: center;
+    }
+
+
 
     /* 320px PAGINA Chi siamo */
 
@@ -390,7 +409,14 @@ footer {
 
     .input3 {
         width: 280px;
-        height: auto;
+        height: 30px;
+        font-family: Fira sans;
+    }
+
+    form textarea {
+        width: 280px;
+        height: 60px;
+        font-family: Fira sans;
     }
 
 
@@ -598,7 +624,14 @@ footer {
         z-index: 1;
         border: 1px solid black;
         text-align: center;
+        transition-property: background-image, color;
+        transition-duration: 0.1s;
 
+
+    }
+
+    #pulsantereg:hover {
+        background-image: linear-gradient(to right, #aad8ea 0%, #ada5e5 100%);
 
     }
 
@@ -684,6 +717,15 @@ footer {
         margin-left: 20px;
         margin-right: 20px;
         text-align: left;
+    }
+
+
+    .footerbox1>div {
+        width: 150px;
+        height: auto;
+
+
+
     }
 
 
@@ -793,6 +835,10 @@ footer {
         height: auto;
     }
 
+
+
+
+
     /* 680px Pagina CONTATTI */
 
     #box-z {
@@ -833,9 +879,15 @@ footer {
         height: auto;
     }
 
+
+
     #box div {
         width: 30%;
         height: auto;
+    }
+
+    h5 {
+        text-align: center;
     }
 }
 
@@ -855,6 +907,7 @@ footer {
         padding-top: -70px;
         padding-bottom: -70px;
         padding-left: 25vw;
+        padding-right: 25vw;
     }
 
     .footerbox1 {
@@ -865,6 +918,12 @@ footer {
     #box div {
         width: 20%;
         height: auto;
+    }
+
+
+
+    h5 {
+        text-align: center;
     }
 
 

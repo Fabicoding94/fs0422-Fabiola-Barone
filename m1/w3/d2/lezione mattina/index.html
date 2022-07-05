@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        var stringa = 'prova';
+        var stringa2 = "prova";
+        
+        var html = <div class="test"> </div>;
+        var html2 = "<div class=\"test\"> </div>";  /// le virgolette con \ sono testuali--!>
+        var html3 = '<div class= "test">'+ stringa+'</div>';
+
+        console.log(html3)
+        documet.write(html3)
+
+
+        /*
+        Interpolazione di stringhe
+
+        ` ALT + 9 + 6 (rilascio 9 e poi premo 6)
+        */
+
+        var html4 =  `<div class="test"> ${stringa} </div> `; 
+
+
+        //ovunque sia richiesto l'inserimento di un astringa o un numero 
+        //poss inserire una variabile contenente
+        //document.querySelector('#blocco-rosso')
+        //
+     
+
+        let a = 5;
+        console.log(a)
+
+        //Il colsole block è questo racchiuso tra le due parentesi graffe. Il lei interno al blocco funziona sono lì dentro. Il console.log(b) funziona solo entro le parentesi.
+
+
+        {
+            let b = 4
+            console.log(b)
+            
+        }
+        
+
+
+        {
+            var c = 3
+        }
+
+        console.log(c); // c è un var ed ignora il blocco
+
+        {
+            var b = 3;//posso riutilizzare l'identificatore b, perchè la let b precedente nasce e muore al'interno del blocco.
+        }
+        console.log(b);
+
+
+
+
+        /*******
+         CONST
+        */
+
+
+        //const b; l'identificatore b è glia utilizzato dalla var della riga 53, non posso riutilizzarlo per una const
+
+        const c = 2
+        console.log(c)
+        //c=1 errore:non posso riassegnare il valore di un a costante
+
+        const obj = {
+            nome: 'Fabiola',
+            cognome: 'Barone'
+        }
+
+        obj.nome = 'Fabiola';
+
+        console.log(obj)
+
+        /*
+        OPERATORI
+        */a
+        var x = 10;
+        x = 11;
+
+
+        x+= 2;//incremento di 2
+        console.log(x)
+
+        x-= 2;//decremento di 2
+
+        x++//incremento di 1
+        x--//decremento di 1
+
+
+        //+ è peratore matematico di somma, ma anche operatore di concatenamento
+
+        var saluto = 'ciao';
+        saluto += '';
+        saluto += 'Mario';
+        console.log(saluto);
+
+        let prova = document.querySelector('#prova');
+        prova.innerHTML += '<li>item</li>';
+        prova.innerHTML += '<li>item</li>';
+        prova.innerHTML += '<li>item</li>';
+        prova.innerHTML += '<li>item</li>';
+
+
+    </script>
+
+</body>
+
+</html>
