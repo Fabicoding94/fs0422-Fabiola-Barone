@@ -8,51 +8,60 @@
 </head>
 <body>
 
+<form action="">
 
 
-    <section>
+    a: <input type="text" id="a"><br>
+    b: <input type="text" id="b"><br>
+    <input type="button" value="addizione" onclick="addizione();">  <!--l'evento:onclick permette di collegare la funzione dello script-->
+    <input type="button" value="sottrazione" onclick="sottrazione();" >
+    <input type="button" value="moltiplicazione" onclick="moltiplicazione();">
+    <input type="button" value="divisione" onclick="divisione();">
 
-        <form action=""></form>
+    risultato: <input type="text" id="risultato"><br>
 
-        <div id="elementi">
+    <script type="text/javascript">
 
-            a: <input type="text" id="a">
-            b: <input type="text" id="b">
+function addizione(){
+            var a = 1.0*document.getElementById("a").value;
+            var b = 1.0*document.getElementById("b").value;
+            document.getElementById("risultato").value=a+b;  //il "+" da solo fa la concatenazione delle stringhe. Occorre aggiungere "1.0*" alle due variabili, prima di document. Adesso nella somma, "a" e "b" li tratta come numeri, non stringhe.
+        }
 
-            <div id="bottoni">
-                <input type="button" value="somma" onclick="somma();"  > <br>
-                <input type="button" value="sottrazione" onclick="sotrazione();"  > <br>
+        function sottrazione(){
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            document.getElementById("risultato").value = a-b;
+        }
 
-                
-            </div>
-            risultato: <input type="text" id="risultato"> <br>
+        function moltiplicazione(){
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            document.getElementById("risultato").value = a * b;
+        }
 
-
-
-
-        </div>
-
-        <script>
-        
-            function aggiungiNumero(bottone){
-                let display = document.getElementById('display')
-                console.log(display.value)
-                if(display.value[0] != 0){
-                    display.value += bottone.innerHTML
-                }else{
-                    display.value = bottone.innerHTML
-                }
-            }
-    
-            function reset(){
-                display.value = 0;
-            }
-    
-        </script>
+        function divisione(){
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            document.getElementById("risultato").value = a / b;
+        }
 
 
 
-    </section>
+
+    </script>
+
+
+
+
+
+
+</form>
+
+
+
+
+
 
 
     

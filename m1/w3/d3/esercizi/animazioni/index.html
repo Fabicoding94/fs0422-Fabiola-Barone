@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="quadrato"></div>
+
+
+
+
+
+    <style>
+        #quadrato {
+            background-color: red;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+
+    <div id="quadrato"></div>
+
+
+    <script>
+
+        let quadrato = document.querySelector('#quadrato');
+
+        let x = 0
+
+        let timer = setInterval(function () {
+
+            quadrato.style.marginLeft = x + 'px';
+            if (x >= 300) {
+                x + = 3;
+                else {
+                clearInterval(timer)
+            }
+
+            console.log('ok')
+        }
+        }, 1000)
+
+
+
+     let timer = setInterval(aumentaMarginLeft, 60)
+
+    </script>
+</body>
+
+</html>

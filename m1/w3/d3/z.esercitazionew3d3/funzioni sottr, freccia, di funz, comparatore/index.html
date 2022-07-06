@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+
+    <link rel="stylesheet" href="stile.css">
+</head>
+
+<body>
+
+    <form action="">
+
+        <h1>Esercizio funzioni</h1>
+
+        <div id="scatolainput">
+            a: <input type="text" id="a"><br>
+            b: <input type="text" id="b"><br>
+        </div>
+
+
+        <div id="scatolaoperazioni">
+            
+            <!--l'evento:onclick permette di collegare la funzione dello script-->
+            <input type="button" value="range età" onclick="sottrazione();">
+            <input type="button" value="a = b?" onclick="comparazione1();">
+
+            <input type="button" value="a > b?" onclick="comparazione2();">
+            <input type="button" value="saluto" onclick="saluto();">
+
+        </div>
+
+        <div id="scatolaoutput">
+            risultato: <input type="text" id="risultato"><br>
+
+            <input type="button" value="Reset" onclick="Reset();">
+
+        </div>
+
+    </form>
+
+
+    <script type="text/javascript">
+
+        //Funzioni che definisco attraverso due variabili, che inserisco attraverso due input separati, e poi comando il tipo di operazione da svolgere con esse.
+
+         function sottrazione() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            document.getElementById("risultato").value = a - b;
+        }
+
+        function comparazione1() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            document.getElementById("risultato").value = a == b; 
+        }
+
+        function comparazione2() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            document.getElementById("risultato").value = a > b; 
+        }
+
+       
+        function saluto() {
+        
+        document.getElementById("risultato").value = "Hello World!";
+
+        
+    }
+
+        
+        
+
+          
+            
+        
+
+        function Reset() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            document.getElementById("risultato").value = " ";
+            document.getElementById("a").value = " ";
+            document.getElementById("b").value = " ";
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
