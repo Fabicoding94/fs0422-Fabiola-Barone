@@ -14,7 +14,7 @@
     a:<input type="text" id="a">
     b:<input type="text" id="b">
 
-   
+
 
 
 
@@ -40,7 +40,7 @@
 
         }
 
-        function magg(){
+        function magg() {
             var a = document.getElementById("a").value
             var b = document.getElementById("b").value
             if (a > b) {
@@ -52,13 +52,13 @@
 
         }
 
-        function min (a, b){
-           
+        function min(a, b) {
+
             return a < b ? a : b;
         }
-        console.log(min(65,52))
+        console.log(min(65, 52))
 
-        let fn_c = function(x) {   //Questa è una funzione definita nel metodo classico
+        let fn_c = function (x) {   //Questa è una funzione definita nel metodo classico
             return x * 2;
         }
 
@@ -70,10 +70,31 @@
 
         //Quando la funzione ha un solo argomento, poaaiamo scriverla come funzione freccia in modo ancora più sintetico, ovvero come segue: (togliamo le parentesi tonde, graffe e "return")
 
-        let fn_a = x =>  x * 2
+        /*let fn_a = x => x * 2
+        console.log(42) */
+
+        
+        function crazyDiff(given) {
+            let diff = Math.abs(given - 19)
+            if (given > 19) {
+                return diff * 3
+            } else return diff
+
+        }
+
+        let res = crazyDiff(18)
+            console.log(res)
 
 
-        console.log
+        
+
+
+
+        
+
+
+        
+    
 
 
 
@@ -84,8 +105,11 @@
 
 
 
-       
-   
+
+
+
+
+
 
 
 

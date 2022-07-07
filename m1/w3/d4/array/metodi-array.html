@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    let fiori = ['rosa', 'geranio', 'tulipano', 'margherita']
+
+    fiori.push('Margherita') //aggiunge alla fine dell'array
+
+    console.log(fiori)
+
+    let fioreEliminato = fiori.pop()//rimuove l'ultimo valore alla fine dell'array 
+    console.log(fiori)
+
+
+
+    //splice
+    fiori = ['rosa', 'geranio', 'tulipano', ]
+    let dadoveInizioAdEliminare = 0;
+    let quantiNeVoglioEl=1;
+    fiori.splice(dadoveInizioAdEliminare, quantiNeVoglioEl )
+    console.log(fiori)
+
+    //sostituire con splice
+    fiori = ['rosa', 'geranio', 'tulipano', ]
+    fiori.splice(2,1,'margherita')
+    console.log(fiori)
+
+
+    //concat
+    fiori = ['rosa', 'geranio', 'tulipano', ]
+    
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

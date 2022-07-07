@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="test"></div>
+    <div id="test2"></div>
+
+
+    <script>
+        let array = [2, 'a']  //in posiz 0 abbaimo 2, in posiz 1 abbiamo 'a'
+        console.log(array)    // la lenght è 2 (lunghezza array: numero di el)
+        console.log(array.length) //ottengo la lung array
+        console.log(array[1])    //leggo il secondo valore pres nell'array
+        array[1] = 'b'           //sovrascrivo il sec valore di arr
+
+        console.log(array[1])
+
+
+        //utilizzo dei valori
+
+
+        document.getElementById('test').innerHTML = '<span>' +array[1]+ '</span>'
+
+        let span = document.createElement('span');
+        span.innerHTML = array[1]
+        console.log(span)
+
+        document.getElementById('test').append(span)
+
+        document.getElementById('test2').innerHTML = array.joinn('br')
+
+
+    </script>
+
+</body>
+
+</html>
