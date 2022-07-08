@@ -1,0 +1,130 @@
+html{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+   
+
+}
+ 
+
+
+
+body{
+    width: 30%;
+    height: 80%;
+    margin-left: 33vw;
+    margin-top: 10vh;
+    margin-bottom: 30vh;
+    background-image: linear-gradient( to bottom right, rgba(254, 105, 182, 0.7) 0%, rgba(253, 162, 88, 0.7) 100%  );
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 15px 15px 10px grey;
+
+   
+
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+#display{
+    width: 20vw;
+    height: 6vh;
+    margin-left: 4.8vw;
+    margin-top: 1vh;
+
+}
+
+#bottoni{
+    display: grid;
+    grid-template-columns: repeat(4, 4vw);
+    grid-template-rows: repeat(5, 4vw);
+    justify-content: space-evenly;
+    row-gap: 3vh;
+   margin-top: 3vh;
+   margin-bottom: 3vh;
+   font-size: larger;
+    
+}
+
+.bott{
+    font-weight: bold;
+    
+}
+
+#bottone4{
+ grid-column: 1;
+ grid-row: 2
+}
+
+#bottone5{
+    grid-column: 2;
+    grid-row: 2
+}
+
+#bottone6{
+    grid-column: 3;
+    grid-row: 2
+}
+
+#bottone7{
+    grid-column: 1;
+    grid-row: 3
+}
+#bottone8{
+    grid-column: 2;
+    grid-row: 3
+}
+
+#bottone9{
+    grid-column: 3;
+    grid-row: 3
+}
+
+#bottone0{
+    grid-column: 3;
+    grid-row: 4
+}
+
+#bottonetot{
+    grid-column: 4;
+    grid-row: 4
+}
+
+#bottonereset{
+    grid-column: 3;
+    grid-row: 4
+}
+
+#bottonesomma{
+    grid-column: 4;
+    grid-row: 1
+}
+
+#bottone-{
+    grid-column: 4;
+    grid-row: 2
+}
+
+#bottonetot{
+    grid-column: 1 / 5;
+    grid-row: 5
+}
+#bottonex{
+    grid-column: 4;
+    grid-row: 3
+}
+
+#bottonediv{
+    grid-column: 4;
+    grid-row: 4
+}
+
+#bottone0{
+    grid-column: 2;
+    grid-row: 4
+}
+

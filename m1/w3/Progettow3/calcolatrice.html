@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCalculator</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stile.css">
+</head>
+
+<body>
+
+
+
+    <h1>Fabi's basic calculator</h1>
+
+    <input class="bott" id="display" placeholder="0" type="text">
+
+
+    <div id="bottoni">
+
+        <button class="bott" id="bottone1" data-simbolo="1" onclick="aggiungiSimbolo(this)">1</button>
+        <button class="bott" id="bottone2" data-simbolo="2" onclick="aggiungiSimbolo(this)">2</button>
+        <button class="bott" id="bottone3" data-simbolo="3" onclick="aggiungiSimbolo(this)">3</button>
+        <button class="bott" id="bottone4" data-simbolo="4" onclick="aggiungiSimbolo(this)">4</button>
+        <button class="bott" id="bottone5" data-simbolo="5" onclick="aggiungiSimbolo(this)">5</button>
+        <button class="bott" id="bottone6" data-simbolo="6" onclick="aggiungiSimbolo(this)">6</button>
+        <button class="bott" id="bottone7" data-simbolo="7" onclick="aggiungiSimbolo(this)">7</button>
+        <button class="bott" id="bottone8" data-simbolo="8" onclick="aggiungiSimbolo(this)">8</button>
+        <button class="bott" id="bottone9" data-simbolo="9" onclick="aggiungiSimbolo(this)">9</button>
+        <button class="bott" id="bottone0" data-simbolo="0" onclick="aggiungiSimbolo(this)">0</button>
+        <button class="bott" id="bottone0." data-simbolo="0." onclick="aggiungiSimbolo(this)">0.</button>
+        <button class="bott" id="bottonex" data-simbolo="*" onclick="aggiungiSimbolo(this)">X</button>
+        <button class="bott" id="bottonediv" data-simbolo="/" onclick="aggiungiSimbolo(this)">/</button>
+        <button class="bott" id="bottonesomma" data-simbolo="+" onclick="aggiungiSimbolo(this)">+</button>
+        <button class="bott" id="bottone-" data-simbolo="-" onclick="aggiungiSimbolo(this)">-</button>
+        <button class="bott" id="bottonetot" onclick="calcola()">=</button>
+        <button class="bott" id="bottonereset" onclick="reset()">C</button>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="calc.js"></script>
+</body>
+
+</html>

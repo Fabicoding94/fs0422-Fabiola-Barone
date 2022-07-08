@@ -10,6 +10,8 @@ console.log(maiuscolo)
 var minuscolo = titolo.toLowerCase();
 console.log(minuscolo)
 
+console.log(titolo.toUpperCase())
+
 /*Suddivisione stringa nei suoi elementi, selezione di due e concatenazione in una stringa*/
 
 var elementistringa = titolo.split(' ') //se metti("")divide in lettere, se metti (' ')divide in parole, se metti() divide in frasi
@@ -50,16 +52,16 @@ console.log(differenza())
 
 let ortaggi = ["pomodori", "zucchine", "melanzane", "lattuga", "broccoli"]
 
-ortaggi.push("cavolo")
+ortaggi.push("cavolo") //aggiunge come ultimo elemento
 console.log(ortaggi)
 
-ortaggi.pop()     //elimina ultimo elemento
+ortaggi.pop()     //elimina ultimo elemento (ovvero cavolo)
 console.log(ortaggi)
 
-ortaggi.shift()  //elimina il primo elemento
+ortaggi.shift()  //elimina il primo elemento (ovvero pomodori)
 console.log(ortaggi)
 
-ortaggi.unshift("carote")
+ortaggi.unshift("carote") //aggiunge come primo elemento carote
 console.log(ortaggi)
 
 
