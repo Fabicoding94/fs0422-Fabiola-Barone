@@ -10,48 +10,61 @@ html{
 
 
 body{
+
+    
     width: 30%;
     height: 80%;
     margin-left: 33vw;
     margin-top: 10vh;
     margin-bottom: 30vh;
-    background-image: linear-gradient( to bottom right, rgba(254, 105, 182, 0.7) 0%, rgba(253, 162, 88, 0.7) 100%  );
+    background-image: linear-gradient( to bottom right, rgba(242, 158, 98, 0.3) 0%, rgba(219, 83, 65, 0.8) 100%  );
+    background-color: rgba(40, 38, 38, 0.8);
     border: 2px solid black;
     border-radius: 20px;
-    box-shadow: 15px 15px 10px grey;
+    box-shadow: 0px 10px 10px rgb(69, 55, 84);
 
-   
-
-}
+   }
 
 
+   button:hover{
 
-h1{
-    text-align: center;
-}
+    background-color: rgba(42, 23, 128, 0.7);
+    color: white;
+   }
 
 #display{
     width: 20vw;
-    height: 6vh;
+    height: 10vh;
     margin-left: 4.8vw;
-    margin-top: 1vh;
+    margin-top: 10vh;
 
 }
 
+button{
+    background-image: linear-gradient( to top right, rgba(242, 158, 98, 0.3) 0%, rgba(219, 83, 65, 0.8) 100%   );
+    
+}
+
 #bottoni{
+
+   
+    width: 20vw;
     display: grid;
-    grid-template-columns: repeat(4, 4vw);
-    grid-template-rows: repeat(5, 4vw);
-    justify-content: space-evenly;
-    row-gap: 3vh;
+    grid-template-columns: repeat(4, 5.1vw);
+    grid-template-rows: repeat(5, 9vh);
+    
+
+    
+    margin-left: 4.8vw;
    margin-top: 3vh;
-   margin-bottom: 3vh;
+   margin-bottom: 50vh;
    font-size: larger;
     
 }
 
 .bott{
     font-weight: bold;
+ 
     
 }
 
