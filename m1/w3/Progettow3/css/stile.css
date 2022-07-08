@@ -109,8 +109,8 @@ button{
 }
 
 #bottonereset{
-    grid-column: 3;
-    grid-row: 4
+    grid-column: 4;
+    grid-row: 5
 }
 
 #bottonesomma{
@@ -124,7 +124,7 @@ button{
 }
 
 #bottonetot{
-    grid-column: 1 / 5;
+    grid-column: 1 / 4;
     grid-row: 5
 }
 #bottonex{
@@ -141,4 +141,7 @@ button{
     grid-column: 2;
     grid-row: 4
 }
-
+#bottoneback{
+    grid-column: 3;
+    grid-row: 4
+}
