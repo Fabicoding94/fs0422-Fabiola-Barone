@@ -17,8 +17,8 @@ body{
     margin-left: 33vw;
     margin-top: 10vh;
     margin-bottom: 30vh;
-    background-image: linear-gradient( to bottom right, rgba(242, 158, 98, 0.3) 0%, rgba(219, 83, 65, 0.8) 100%  );
-    background-color: rgba(40, 38, 38, 0.8);
+    background-image: linear-gradient( to bottom right, rgba(238, 226, 218, 0.3) 0%, rgba(37, 37, 157, 0.8) 100%  );
+    background-color: white;
     border: 2px solid black;
     border-radius: 20px;
     box-shadow: 0px 10px 10px rgb(69, 55, 84);
@@ -41,7 +41,8 @@ body{
 }
 
 button{
-    background-image: linear-gradient( to top right, rgba(242, 158, 98, 0.3) 0%, rgba(219, 83, 65, 0.8) 100%   );
+    background-image: linear-gradient( to top right, rgba(231, 221, 214, 0.3) 0%, rgba(37, 37, 157, 0.8) 100%  );
+    color: rgb(78, 19, 19);
     
 }
 
