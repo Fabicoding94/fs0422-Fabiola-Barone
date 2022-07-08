@@ -17,8 +17,9 @@ body{
     margin-left: 33vw;
     margin-top: 10vh;
     margin-bottom: 30vh;
-    background-image: linear-gradient( to bottom right, rgba(238, 226, 218, 0.3) 0%, rgba(37, 37, 157, 0.8) 100%  );
-    background-color: white;
+    /*background-image: linear-gradient( to bottom right, rgba(238, 226, 218, 0.3) 0%, rgba(37, 37, 157, 0.8) 100%  );*/
+    background-color: rgba(124, 201, 237, 0.4);
+  
     border: 2px solid black;
     border-radius: 20px;
     box-shadow: 0px 10px 10px rgb(69, 55, 84);
@@ -28,7 +29,8 @@ body{
 
    button:hover{
 
-    background-color: rgba(42, 23, 128, 0.7);
+   /* background-color: rgba(42, 23, 128, 0.7);*/
+   background-color: rgba(124, 201, 237, 0.4);
     color: white;
    }
 
@@ -41,8 +43,12 @@ body{
 }
 
 button{
-    background-image: linear-gradient( to top right, rgba(231, 221, 214, 0.3) 0%, rgba(37, 37, 157, 0.8) 100%  );
+    background-color: rgba(104, 173, 206, 0.5);;
     color: rgb(78, 19, 19);
+    width: 100%;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 20px;
     
 }
 
