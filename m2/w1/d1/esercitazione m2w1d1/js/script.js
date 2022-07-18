@@ -7,7 +7,7 @@ var soloData = new Date ( 2022, 7, 18);
 document.write(soloData)  */
 
 
-//Inizio parte copiata
+//Inizio parte comune
 
 let contenitore = document.querySelector('#container')
 
