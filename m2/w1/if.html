@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        let condizione = false;
+
+        if(condizione)
+        alert('prova')
+
+        alert('prova2')
+
+
+        function controllaEta(eta){
+
+            if (eta < 18)   //l'iif senza le graffe esegue tutto ciò che c'è sotto e si ferma quando incontra una riga vuota//
+            document.write('sei minorenne')
+            return false; //return interrompe la funz//
+
+
+            document.write('sei maggiorenne')
+        }
+
+        controllaEta(30)
+
+    </script>
+    
+</body>
+</html>

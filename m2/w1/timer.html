@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="timerBtn">Avvia timer</button>
+    <div id="display"></div>
+
+    <!-- usiamo gli AddEventListener.. nel javascript anzicchè onclick nell'html -->
+
+    
+    <script>
+
+        let timerBtn = document.getElementById("timerBtn")
+        let display = document.getElementById("display")
+
+        timerBtn.addEventListener("click", function(){ //al click al bottone "timerBtn" scatena la funzione
+
+            let time = new Date();
+
+            time.setHours(0)
+            time.setMinutes(0) //settiamo i minuti e sec a zero
+            time.setSeconds(0)  
+            
+
+            
+
+            setInterval(function () {   //setInterval scatena la funzione ogni 1000ms (millisecondi)
+
+                time.setMilliseconds(time.getMilliseconds() + 1 )
+
+                display.innerHTML = time.toLocaleTimeString() + ':' + time.getMilliseconds() 
+            }, 0)// (display.value solo se lo facevamo scrivere dentro i capi di un form)
+
+
+        });
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
