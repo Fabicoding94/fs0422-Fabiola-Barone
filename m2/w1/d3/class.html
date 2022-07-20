@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        /*
+        function PizzaPRO(_gusto, _tipo, _prezzo){
+            this.gusto = _gusto;
+            this.tipo = _tipo;
+            this.prezzo = _prezzo; 
+            this.mostraPrezzo = function(){ 
+                console.log(`Il prezzo della pizza ${this.gusto} di tipo ${this.tipo} è di ${this.prezzo}€`);
+            }
+            this.mostraThis =  function(){ console.log(this) }
+        }
+        */
+
+        class Pizza{
+
+            constructor(_gusto, _tipo, _prezzo){
+                console.log('funziona');
+                this.gusto = _gusto;
+                this.tipo = _tipo;
+                this.prezzo = _prezzo;
+            }
+
+            mostraPrezzo(){
+                console.log(`Il prezzo della pizza ${this.gusto} di tipo ${this.tipo} è di ${this.prezzo}€`);
+            }
+
+            mostraThis(){
+                console.log(this)
+            }
+
+        }
+
+        let margherita = new Pizza('Margherita','Napoletana',5)
+        console.log(margherita)
+
+        margherita.mostraThis()
+        margherita.mostraPrezzo()
+
+    </script>
+</body>
+</html>
