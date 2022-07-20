@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <style>
+        .quadrato {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black
+        }
+    </style>
+
+    <div class="quadrato" data-color="red"></div>
+    <div class="quadrato" data-color="pink"></div>
+    <div class="quadrato" data-color="yellow"></div>
+    <div class="quadrato" data-color="blue"></div>
+    <div class="quadrato" data-color="green"></div>
+
+    <script>
+
+        let array = document.querySelectorAll('.quadrato')
+
+
+        //-------------CON FUNZIONE FRECCIA-------------
+        array.forEach(function(quadrato){
+
+            quadrato.addEventListener('click', () => quadrato.style.backgroundColor = quadrato.getAttribute('data-color'))
+
+        })
+
+        //-------------CON FUNZIONE NORMALE-------------
+        
+        /* array.forEach(function(quadrato){
+ 
+             let color = quadrato.getAttribute('data-color')
+             quadrato.addEventListener('click', function(){
+                 quadrato.style.backgroundColor = color
+             })
+ 
+         })   */
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

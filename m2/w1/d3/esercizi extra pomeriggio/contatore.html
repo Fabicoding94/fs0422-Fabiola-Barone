@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatore di click</title>
+</head>
+
+<body>
+
+    <button id="contatore">clicca</button>
+    <div>Numero di click: <span id="numeroclick">0</span></div>
+
+
+
+    <script>
+        let contatore = document.querySelector('#contatore');
+        let numeroDiClick = document.querySelector('#numeroclick');
+
+        contatore.addEventListener('click', incrementClick);
+
+        function incrementClick() {
+
+            numeroDiClick.innerHTML = parseInt(numeroDiClick.innerHTML) + 1
+        }
+
+        //-------Scritto con una Funzione freccia---------
+        /*
+        contatore.addEventListener('click', () => numeroDiClick.innerHTML = parseInt(numeroDiClick.innerHTML) + 1)
+       */
+    </script>
+
+</body>
+
+</html>
