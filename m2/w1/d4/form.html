@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+
+        <input type="text" name="nome" id="nome" required placeholder="nome">
+        <input type="email" name="email" id="email" required placeholder="email">
+        <input type="password" name="password" id="password" placeholder="password">
+        <input type="password" name="password" id="conferma-password" placeholder="Conferma password">
+
+        <select name="" id="città">
+            <option value="">Seleziona cità</option>
+            <option value="roma">Roma</option>
+            <option value="milano">Milano</option>
+            <option value="napoli">Napoli</option>
+        </select>
+
+        <button>Registrati</button>
+
+        <!--la validazione va fatta sia dal frontend che dal backend.
+La validazione di html prevede di inserire "required" dentro gli input-->
+
+        <!--Validazione fatta da noi-->
+
+        <script>
+
+            let form = document.querySelector('#myForm')
+
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault() ;
+
+                let nome= document.querySelector('#nome');
+                let email= document.querySelector('#email');
+                let password= document.querySelector('#password');
+                let confermaPassword= document.querySelector('#conferma-password');
+                let citta= document.querySelector('#citta');
+
+
+                let valid = 
+                if(nome.value == ''){
+                nome.style.border= '1px solid red';
+                valid = false
+                }else{
+                    nome.style.bordel = ''
+                }
+                if(!email.value){
+                email.style.border= '1px solid red';
+                valid = false
+                }else{
+                    email.style.border = ''
+                }
+
+                if(password.valu !)
+
+
+            })
+        </script>
+
+
+
+
+
+
+    </form>
+
+    <script></script>
+
+
+
+
+
+
+
+</body>
+
+</html>
