@@ -1,0 +1,126 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Ecco l'ora attuale:</h1>
+    <div id="clock"></div>
+    <div id="clock2"></div>
+    <div></div>
+    <div id="clock4"></div>
+
+    <script>
+
+        //---------------METODO GET-----------------------------
+
+        let now = new Date();
+        console.log(now)
+        console.log(now.getDay())//numero del giorno della settimana (da 0 a 6)
+        console.log(now.getDate())//numero del giorno del mese (da 1 a 31)
+        console.log(now.getMonth())//numero del mese (partendo da zero)
+        console.log(now.getFullYear())//numero dell'anno
+        /*
+        timestamp è il numero di millisecondi trascorsi dal 1 gennatio 1970 ad oggi
+        */
+        //3 forme uguali per scrivere la stessa cosa: now.getTime
+        let millisecondi = now.getTime() //millisecondi a partire dal 1 Genn 1970
+        console.log(millisecondi);
+
+        console.log(now.getTime());
+
+        let millisecondi2 = now.getTime()
+        console.log(millisecondi2, new Date(millisecondi2))
+
+        let ore = now.getHours()
+        console.log(ore);
+
+        //var data = new Date();
+        console.log(new Date().getFullYear());
+
+
+
+        //----Data specifica----
+
+        let dataSpecifica = new Date(1994, 7, 21, 11, 23, 45, 05)
+        console.log(dataSpecifica)
+
+        let dataSpecifica2 = new Date(1994, 7, 21)
+        console.log(dataSpecifica2)
+
+        let dataSpecifica3 = new Date(1994, 7, 21, null, null, null, null)
+        console.log(dataSpecifica3)
+
+
+
+
+
+        //-------------------METODI SET-----------------
+
+        now.setFullYear(2021)
+        console.log(now)
+
+        let annoSettato = new Date();
+        console.log(annoSettato.setFullYear(1970))
+
+        let meseSettato = new Date();
+        console.log(meseSettato.setMonth(0))
+
+        let millisec = new Date();
+        console.log(millisec.setTime(2022))
+
+        /*
+        esercizio
+        mostra un orologio che si aggiorni con un intervallo di 1 secondo
+        */
+
+
+
+        setInterval(function () {
+
+            let time = new Date();
+
+            let clock = document.getElementById('clock')
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            clock.innerHTML = time.toLocaleTimeString('it-IT', options)
+
+        }, 1000);
+
+
+
+
+        setInterval(function () {
+
+            let time = new Date();
+            time.setMonth(3)
+
+            let clock2 = document.getElementById('clock2')
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+            clock2.innerHTML = time.toLocaleTimeString('it-IT', options)
+
+        }, 1000);
+
+
+        setInterval(function () {
+
+            let orafantasy = new Date();
+            orafantasy.setFullYear(2333)
+            orafantasy.setMonth(0)
+
+            let orafant = document.querySelector('#clock4')
+            orafant.innerHTML = orafantasy.toLocaleDateString('it-IT'),
+            orafant.innerHTML = orafantasy.toLocaleString('it-IT')
+            
+        });
+
+
+    </script>
+</body>
+
+</html>
