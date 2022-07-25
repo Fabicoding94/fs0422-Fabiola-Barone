@@ -17,30 +17,6 @@
 
 
     <div class="container icon-grid" id="griglia">
-        <div class="icon">🐱</div>
-        <div class="icon">🦉</div>
-        <div class="icon">🐾</div>
-        <div class="icon">🦁</div>
-        <div class="icon">🦋</div>
-        <div class="icon">🐛</div>
-        <div class="icon">🐝</div>
-        <div class="icon">🐬</div>
-        <div class="icon">🦊</div>
-        <div class="icon">🐨</div>
-        <div class="icon">🐰</div>
-        <div class="icon">🐯</div>
-        <div class="icon">🐱</div>
-        <div class="icon">🦉</div>
-        <div class="icon">🐾</div>
-        <div class="icon">🦁</div>
-        <div class="icon">🦋</div>
-        <div class="icon">🐛</div>
-        <div class="icon">🐝</div>
-        <div class="icon">🐬</div>
-        <div class="icon">🦊</div>
-        <div class="icon">🐨</div>
-        <div class="icon">🐰</div>
-        <div class="icon">🐯</div>
     </div>
     <div class="container text-center">
         <input type="button" id="button" class="button" onclick=startGame() value="Ricomincia">
@@ -50,10 +26,34 @@
     <div id="modal">
         <div class="content">
             <h2>Congratulazioni! Hai risolto il gioco in: </h2>
-            <p><span id="totalTime"> </span> </p>
-            <p><input type="button" class="button" onclick=playAgain() value="Gioca Ancora!"></p>
+            <p><span id="tempoTrascorso"> </span> </p>
+            <p><input type="button" class="button" onclick=playAgain() value="Altra partita"></p>
+            
+            
         </div>
     </div>
+
+
+
+    <div id="leaderboardContainer">
+
+        <table id="leaderboard">
+            <thead>
+                <tr>
+                    
+                </tr>
+            </thead>
+            <tbody>
+               
+
+            </tbody>
+
+
+        </table>
+
+
+    </div>
+
 
     <script src="js/memory.js">
     </script>

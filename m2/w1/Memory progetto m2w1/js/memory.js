@@ -5,17 +5,29 @@ let arrayAnimali = ['🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '�
 
 let arrayComparison = [];
 
+let scores = localStorage.getItem('Scores') || '[]';
+
+scores = JSON.parse(scores);
+
+console.log(scores);
+
+let tbody = document.querySelector('#leaderboard tbody')
+
+let nicknameSet = document.querySelector('#nicknameSet');
+
 document.body.onload = startGame();
-
-
 
 // mi serviranno alcune variabili 1. interval 2. una agganciata alla classe find 
 // 3. una agganciata al'id modal 4. una agganciata alla classe timer
 
-var interval;
-var iconsFind = document.getElementsByClassName("find");
-var modal = document.getElementById('modal');
-var timer = document.querySelector(".timer");
+var interval; //var globale fuori dalla funct per resettarla ad ogni avvio
+
+var iconsFind = document.getElementsByClassName('find'); //mi serve dopo
+
+var modal = document.querySelector('#modal');//win message DIV
+
+var timer = document.querySelector('.timer');//timer DIV
+
 
 
 //una funzione che serve a mescolare in modo random gli elementi dell'array che viene passato 
@@ -40,43 +52,61 @@ function shuffle(a) {
 // pulisce tutti gli elementi che eventualmente contiene
 // poi fa ciclo per creare i 24 div child -> aggiunge la class e l'elemento dell'array in base all'indice progressivo
 // chiama la funzione timer e associa a tutti gli elementi (div) di classe icon l'evento click e le due funzioni definit sotto
-//----
-function playAgain() {
-    modal.classList.remove("active");
-    startGame();
+
+
+function startGame(){
+
+    //shuffle
+    var arrayShuffle = shuffle(arrayAnimali);
+
+    //resetto il timer con metodo clearInterval
+    clearInterval(interval);
+
+    //svuoto l'array di appoggio da eventuali game precedenti
+    arrayComparison = [];
+
+    //aggancio div id griglia
+    let griglia = document.querySelector('#griglia');
+
+    //pulisco il suo contenuto
+    griglia.innerHTML ='';
+
+    //creazione della griglia
+    //24 card quindi limite ciclo for = 24
+    for(let i = 0; i < 24; i++){ 
+        let cardContainer = document.createElement('div');
+        let card = document.createElement('div');
+        card.classList.add('icon');
+        card.innerHTML = arrayShuffle[i];//assegno ad ogni carta il valore z pescando dall'array shufflato
+
+        griglia.append(cardContainer);
+        cardContainer.append(card)
+    }
+    
+
+    //invoco la funzione timerStart per far partire il timer
+    timerStart();
+
+    var cardGroup = document.querySelectorAll(".icon");
+  
+    //non so come non mettere il doppio addeventlistener
+    for(let singleCard of cardGroup){
+      singleCard.addEventListener("click", displayIcon);
+      singleCard.addEventListener("click", popUpModal);
+     
+    }
+
+    leaderboardGenerator();
 
 }
 
-function startGame() {
+// =============================================================================================
 
-    var arrayShuffle = shuffle(arrayAnimali);
+let iconClick = document.querySelectorAll('.icon');
 
-    clearInterval(interval);
-    arrayComparison = [];
-
-   
-    var lista = document.getElementById('griglia');
-
-    while (lista.hasChildNodes()) {
-        lista.removeChild(lista.firstChild);
-    }for (var i= 0; i< 24; i++) {
-       var id = 'icon-' + 1;
-        var box = document.createElement('div');
-        var element = document.createElement('div');
-        element.className = 'icon';
-        document.getElementById('griglia').appendChild(box).appendChild(element);
-        element.innerHTML = arrayShuffle[i];
-    }}
-
-    startTimer();
-    var icon = document.getElementsByClassName("icon");
-    var icons = [...icon];
-    for (var i = 0; i < icons.length; i++){
-        icons[i].addEventListener("click", displayIcon);
-        icons[i].addEventListener("click", openModal);
-    }
-
-//----
+for(let singleIcon of iconClick){
+   singleIcon.addEventListener('click', displayIcon); 
+}
 
 
 
@@ -129,37 +159,106 @@ function displayIcon() {
     }
 }
 
-
-//-----
 //una funzione che viene mostrata alla fine quando sono tutte le risposte esatte
 
-// una funzione che nasconde la modale alla fine e riavvia il gioco (tipo pop up)
+function popUpModal(){
+    if(iconsFind.length == 24){
+        clearInterval(interval);
+        modal.classList.add('active');
+        document.getElementById('tempoTrascorso').innerHTML = 
+        timer.innerHTML;
+ 
+    }
+
+}
+
+/*nicknameSet.addEventListener('click', () => {
+    let nickname = document.querySelector('#nickname');
+    console.log(nickname, nickname.value);
+    let newScore = new User(nickname.value , timer.innerHTML)
+    console.log(newScore);
+
+    set_Score('Scores', newScore);
+
+    modal.classList.remove('active');
+    startGame();
+});
+*/
+
+// una funzione che nasconde la modale alla fine e riavvia il gioco
+
+function playAgain(){
+        modal.classList.remove('active');
+        startGame();
+};
+
+
+/*-------------------------------
+Se non volessi usare l'Onclick dentro il tagHTML potrei usare lo script seguente:
+let playAgainBtn = document.querySelector('p .button')
+playAgainBtn.addEventListener('click', playAgain);
+----------------------------------*/
+
 
 // una funzione che calcola il tempo e aggiorna il contenitore sotto
 
-function closeModal(){
-    closeicon.addEventListener("click", function(e){
-        modal.classList.remove("active");
-        startGame();
-    });
-}
+function timerStart(){
+    let sec = 0;
+    let min = 0;
+    let hours = 0;
 
-var interval; 
-
-function startTimer() {
-    var s = 0;
-    var m = 0;
-    var h = 0;
+    //Setto il timer con metodo Set interval
+    //intervallo da 1000ms, ogni iterazioen aumentano i secondi, 
+    //logic check per avanzamento minuti
     interval = setInterval(function(){
-        timer.innerHTML = 'Tempo:' + m + 'min' + s + 'sec';
-        s++;
-        if(s == 60){
-            m++; s = 0;
-        } if(m == 60){
-            h++; 
-            m= 0;
+        timer.innerHTML= `Timer: ${hours} h e ${min} min e ${sec} sec`;
+
+        sec++;
+
+        if(sec == 60){
+            min++;
+            sec = 0;
+           
         }
-    },1000);
+        if(min == 60){
+            hours++;
+            min = 0;
+            window.alert('Achievement Unlocked! More than an hour for a Memory match!')
+        }
+    }, 1000)
 }
 
-startTimer();
+
+
+//-----------------Local Storage test area
+function set_Score(key,value){
+ //localStorage.setItem("name of variable", "value to store");
+    scores.push(value)
+    localStorage.setItem(key, JSON.stringify(scores));
+}//End set_LocalStorage
+
+class User{
+    constructor(username, score){
+        this.username = username;
+        this.score = score;
+    }
+}
+
+        //leaderboard generator test
+
+
+function leaderboardGenerator(){
+    tbody.innerHTML = '';
+    for(let score of scores){
+        let tr = document.createElement('tr');
+        for(let prop in score){
+            let td = document.createElement('td');
+            td.innerHTML = score[prop];
+            tr.append(td);
+        }
+        tbody.append(tr);
+    }
+}
+
+
+
