@@ -1,0 +1,34 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(../asset/photo_2022-07-27_15-36-43.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+  
+  #primary {
+    background-color: rgba(252, 0, 0, 0.5);
+    margin-right: 50px; }
+  
+  #secondary {
+    background-color: rgba(15, 234, 7, 0.5); }
+  
+  .btn {
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1.5rem 2rem;
+    width: 150px;
+    height: 150px; }
+  
+  .btn:hover {
+    transform: scale(1.2); }
+  
+  .container {
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    display: flex; }
+  
+  a {
+    color: rgba(255, 255, 255, 0.988);
+    text-decoration: none; }

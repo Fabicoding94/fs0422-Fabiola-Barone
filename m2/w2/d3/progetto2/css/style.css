@@ -1,0 +1,20 @@
+header ul {
+  display: flex; }
+
+h1 {
+  background-color: red; }
+
+p {
+  background-color: red; }
+
+.blocco {
+  background-color: green;
+  width: 100px;
+  height: 100px; }
+
+.quadrato {
+  background-color: blue;
+  width: 220px;
+  height: 220px; }
+  .quadrato:hover {
+    background-color: black; }

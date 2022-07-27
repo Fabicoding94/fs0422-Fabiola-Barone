@@ -1,0 +1,39 @@
+@import 'header';
+@import 'variables';
+@import 'button';
+
+
+
+
+.btn {
+
+   
+
+    font-size: 1.5rem;
+
+     border-radius: 5px;
+    cursor: pointer;
+    padding: 1.5rem 2rem;
+    width: 150px;
+    height: 150px;
+    
+
+   
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.container {
+    position:absolute;
+    left: 35%;
+    top: 40%;
+    display:flex;
+    
+}
+
+a{
+    color: $btn-both;
+    text-decoration: none;
+}

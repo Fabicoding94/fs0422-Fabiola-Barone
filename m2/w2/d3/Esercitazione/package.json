@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "name": "consegna",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "compile:sass": "node-sass sass/style.scss css/stile.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
