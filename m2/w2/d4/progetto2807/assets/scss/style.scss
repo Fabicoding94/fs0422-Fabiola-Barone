@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'navbar';
+@import 'slider';
+@import 'functions';
+
+
+.sliderz{
+    position:absolute;
+    top:-350px;
+}
+
+.nav-link{
+    color : $colore;
+}
+
+.textp{
+    font-family: 'Uchen', serif;
+    margin: 80px 80px;
+    position: absolute;
+    top:650px;
+}
+
+#sideBar{
+    position: sticky;
+    top: 0;
+}

@@ -1,0 +1,32 @@
+#logo {
+  border: 1px solid white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; }
+
+.photoslider {
+  border: 1px solid white;
+  width: 100%;
+  height: 500px; }
+
+.sliderz {
+  width: 50%;
+  margin: 0 auto;
+  height: 500px; }
+
+.sliderz {
+  position: absolute;
+  top: -350px; }
+
+.nav-link {
+  color: white; }
+
+.textp {
+  font-family: 'Uchen', serif;
+  margin: 80px 80px;
+  position: absolute;
+  top: 650px; }
+
+#sideBar {
+  position: sticky;
+  top: 0; }
