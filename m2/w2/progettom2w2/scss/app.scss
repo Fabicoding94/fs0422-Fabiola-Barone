@@ -1,0 +1,42 @@
+@import "variables";
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "function";
+
+//---------------- NAVBAR---------------------
+.navbar{
+    position: sticky;
+    top:0;
+    z-index:100;
+}
+.nice-font{
+    font-family: 'Dancing Script', cursive;
+}
+//--------SEZIONE PRIMO PIANO ----------------
+.sectionF{
+    background-image: url(https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1200x630_center,f_auto,q_auto:best/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.titolo{
+     
+    text-shadow: -2px 0 $coloregreen4, 0 2px $coloregreen4, 2px 0 $coloregreen4, 0 -2px $coloregreen4; 
+}
+
+
+.first-section{
+    width: 100vw;
+    height: 70vh;
+}
+
+.first-btn{
+    border-radius: 8px;
+    background-color: $coloregreen3;
+}
+
+.first-btn a{
+    text-decoration: none;
+}
+
