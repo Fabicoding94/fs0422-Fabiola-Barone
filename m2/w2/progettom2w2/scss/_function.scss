@@ -4,3 +4,10 @@
     border: 1px solid white;
     border-radius: 50%;
 }
+
+
+@mixin interpolazione($val-larghezza, $val-altezza, $val-margine){
+    width: $val-larghezza ;
+    height: $val-altezza ;
+    margin: $val-margine;
+}

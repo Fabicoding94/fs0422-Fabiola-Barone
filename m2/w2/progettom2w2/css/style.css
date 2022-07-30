@@ -8376,11 +8376,13 @@ textarea.form-control-lg {
   width: 100vw;
   position: sticky;
   top: 0;
-  z-index: 100; }
+  z-index: 100;
+  background-color: gradienthover1; }
 
-.navbar:hover {
-  background-image: linear-gradient(90deg, #82cdf9, #3ec13e); }
-
+/*
+.navbar:hover{
+    background-image: $gradienthover1;
+}*/
 .nice-font, h2, .h2 {
   font-family: 'Dancing Script', cursive; }
 
@@ -8453,13 +8455,25 @@ textarea.form-control-lg {
 #certificateContainer {
   width: 100vw;
   height: 40vh;
-  padding-bottom: 30vh;
+  padding-bottom: -40px;
   background-color: beige; }
 
 .containerBig {
   width: 100vw;
   background-color: #0f500f; }
 
-@media screen and (min-width: 288px) {
+@media screen and (max-width: 2000px) {
   #custom-cards {
-    margin-top: 200ox; } }
+    margin-top: 35px; }
+  #carouselExampleCaptions {
+    width: 90vw;
+    height: auto;
+    margin: 10vh auto; }
+  .sectionF {
+    height: 55vh; }
+  h1, .h1 {
+    font-size: 1.8rem !important; }
+  p {
+    font-size: 0.8rem; }
+  .card {
+    height: 40vw; } }
