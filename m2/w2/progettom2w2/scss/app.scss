@@ -6,21 +6,31 @@
 
 //---------------- NAVBAR---------------------
 .navbar{
+    width: 100vw;
     position: sticky;
     top:0;
     z-index:100;
 }
-.nice-font{
+
+.navbar:hover{
+    background-image: $gradienthover1;
+}
+.nice-font, h2{
     font-family: 'Dancing Script', cursive;
 }
-//--------SEZIONE PRIMO PIANO ----------------
+
+.buttonh:hover{
+    background-image: linear-gradient(90deg, rgb(130, 205, 249), rgb(62, 193, 62)) ;
+}
+
+//------------------------SEZIONE PRIMO PIANO ----------------
 .sectionF{
     background-image: url(https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1200x630_center,f_auto,q_auto:best/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg);
     background-repeat: no-repeat;
     background-size: cover ;
 }
 
-.titolo{
+.titolo, .h2{
      
     text-shadow: -2px 0 $coloregreen4, 0 2px $coloregreen4, 2px 0 $coloregreen4, 0 -2px $coloregreen4; 
 }
@@ -28,7 +38,7 @@
 
 .first-section{
     width: 100vw;
-    height: 70vh;
+    height: 55vh;
 }
 
 .first-btn{
@@ -40,3 +50,77 @@
     text-decoration: none;
 }
 
+//-------------------------SEZIONE CARDS----------------------------
+
+.card4{
+    background-image: url(../img/cesto-verdure-assortite-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.card5{
+    background-image: url(../img/cotolette-18-720x720.webp);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.card3{
+    background-image: url(../img/Vegan-Ricotta-4-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.card1{
+    background-image: url(../img/cous-cous-salad4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.card2{
+    background-image: url(../img/fried-tofu-with-lemon-9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.card6{
+    background-image: url(../img/apple-cake-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+//-----------------------------CERTIFICATI------------------------------
+.logo1{
+    @include mixloghi
+}
+
+//-----------------------------CAROSELLO------------------------------
+
+#carouselExampleCaptions{
+    width: 70vw;
+    height: auto;
+    margin: 10vh auto;
+
+}
+
+#certificateContainer{
+    width: 100vw;
+    height: 40vh;
+    padding-bottom: 30vh;
+ background-color: beige ;
+ 
+}
+.containerBig{
+    width: 100vw;
+    background-color: $coloregreen4;
+}
+//------------------------MEDIA QUERIES---------------------------
+@media screen and (min-width: 288px) {
+    
+#custom-cards{
+    margin-top: 200ox;
+
+}
+
+    .sectionF{
+
+    }
+    
+}

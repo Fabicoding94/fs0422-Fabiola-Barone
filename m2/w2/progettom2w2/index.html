@@ -19,11 +19,9 @@
     <!--NAVBAR-->
 
     <nav class="navbar navbar-expand-md navbar-success bg-success mb-ms-1" aria-label="Fourth navbar example">
-        <div class="container-fluid">
+        <div class="container-fluid containerNav">
             <a class="navbar-brand" href="#"><a href="/"
                     class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32">
-                        <use xlink:href="#bootstrap"></use>
                     </svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                         class="bi bi-flower1" viewBox="0 0 16 16">
@@ -32,6 +30,7 @@
                     </svg>
                     <span class="fs-4 ps-4 nice-font"> Plant based food</span>
                 </a></a>
+            <div></div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
                 aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,9 +49,9 @@
                         <a class="nav-link dropdown-toggle text-light" href="#" data-bs-toggle="dropdown"
                             aria-expanded="false">Servizi</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Basic Veggy-Food</a></li>
+                            <li><a class="dropdown-item" href="#">Special Veggy-Food</a></li>
+                            <li><a class="dropdown-item" href="#">Shops</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -84,82 +83,206 @@
     <!--SEZ PRIMO PIANO-->
 
     <section class="first-section">
-        <div class="sectionF p-4 p-md-5 mb-4 text-bg-dark">
-            <div class="col-md-6 px-0">
-                <h1 class="display-3 fst-italic titolo">Crea i tuoi piatti sostenibili e cruelty-free</h1>
+        <div class="sectionF px-md-2 py-5 text-bg-dark">
+            <div class="col-md-6 px-4">
+                <h1 class="display-3 fst-italic titolo">Find your Basic-Veggy or Mix them in special dishes</h1>
                 <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ab at excepturi. Sunt
                     excepturi distinctio libero. Nostrum dolorem unde quo praesentium, iure, vitae at commodi nihil
                     maxime corrupti, repellendus atque?</p>
-                <button class="first-btn lead mb-0 bg-success"><a href="#" class="text-white  fw-bold ">Scoprili
-                        qui</a></button>
+                <button class="first-btn lead mb-0 bg-success buttonh"><a href="#" class="text-white  fw-bold ">Buy
+                        now!</a></button>
             </div>
         </div>
 
     </section>
 
+
+
     <!--SEZ PRIMO PIANO Card-->
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/cous-cous-salad4.jpg" class="card-img-top" alt="cous-cous-salad">
-                    <div class="card-body">
-                        <h5 class="card-title">Cous-cous salad</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+    <div class="container  my-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom text-center">Our veggy selection of the day:</h2>
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+                <div class="card card-cover card4 h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h2 class=" h2 pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Basic food</h2>
+                        <p class="text-dark strong text-shadow-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iure blanditiis qui beatae ab, illo nam amet, recusandae corporis mollitia voluptas
+                            consequatur! Nostrum velit recusandae eaque blanditiis sapiente neque ipsum sunt!</p>
+                        <button class="btn btn-success buttonh">Add your basic!</button>
+
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/vegan-tuna-10.jpg" class="card-img-top" alt="vegan tuna">
-                    <div class="card-body">
-                        <h5 class="card-title">Vegan-fish toast</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
+            <div class="col">
+                <div class="card card-cover card5 h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h2 class=" h2 pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Vegan Burgers</h2>
+                        <p class="text-dark strong text-shadow-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iure blanditiis qui beatae ab, illo nam amet, recusandae corporis mollitia voluptas
+                            consequatur! Nostrum velit recusandae eaque blanditiis sapiente neque ipsum sunt!</p>
+                        <button class="btn btn-success buttonh">Chose you burger!</button>
 
-            </div>
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/Vegan-Ricotta-4-3.jpg" class="card-img-top" alt="fried tofu">
-                    <div class="card-body">
-                        <h5 class="card-title">Vegan cheeses</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/lemon-cakes-17.jpg" class="card-img-top" alt="vegan cake">
-                    <div class="card-body">
-                        <h5 class="card-title">Vegan cakes</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+            <div class="col">
+                <div class="card card-cover card3 h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('img/Vegan-Ricotta-4-3.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h2 class=" h2 pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Vegan cheeses</h2>
+                        <p class="text-dark text-strong text-shadow-1">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Iure blanditiis qui beatae ab, illo nam amet, recusandae corporis mollitia
+                            voluptas consequatur! Nostrum velit recusandae eaque blanditiis sapiente neque ipsum sunt!
+                        </p>
+                        <button class="btn btn-success buttonh">Try them!</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+                <div class="card card-cover card1 h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h2 class=" h2 pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Cous-cous salad</h2>
+                        <p class="text-dark strong text-shadow-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iure blanditiis qui beatae ab, illo nam amet, recusandae corporis mollitia voluptas
+                            consequatur! Nostrum velit recusandae eaque blanditiis sapiente neque ipsum sunt!</p>
+                        <button class="btn btn-success buttonh">Mix your salad!</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover card2 h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('img/vegan-tuna-10.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h2 class=" h2 pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Vegan-fish toast</h2>
+                        <p class="text-dark strong text-shadow-1">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iure blanditiis qui beatae ab, illo nam amet, recusandae corporis mollitia voluptas
+                            consequatur! Nostrum velit recusandae eaque blanditiis sapiente neque ipsum sunt!</p>
+                        <button class="btn btn-success buttonh">Chose you fish!</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover card6 h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h2 class=" h2 pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Vegan cakes</h2>
+                        <p class="text-dark text-strong text-shadow-1">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Iure blanditiis qui beatae ab, illo nam amet, recusandae corporis mollitia
+                            voluptas consequatur! Nostrum velit recusandae eaque blanditiis sapiente neque ipsum sunt!
+                        </p>
+                        <button class="btn btn-success buttonh">Try them!</button>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-------------------------PROVA CARTE--------------------------->
-    
+
 
 
     <!--SEZ PARTNERSHIP-->
 
+    <div id="certificateContainer">
+        <div class="container marketing text-center py-5">
+
+            <h2>Our certificates:</h2>
+
+
+            <div class="row my-5 ">
+                <div class="col-lg-3">
+                    <img class="logo1" src="img/img-loghi/veg-certif.jpg" alt="logo vegan">
+                </div>
+
+                <div class="col-lg-3">
+                    <img class="logo1" src="img/img-loghi/international-vegan-logo-4.png" alt="logo vegan">
+
+                </div>
+                <div class="col-lg-3">
+                    <img class="logo1" src="img/img-loghi/veg-label.png" alt="logo vegan">
+                </div>
+
+                <div class="col-lg-3">
+                    <img class="logo1" src="img/img-loghi/veg-austr.png" alt="logo vegan">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <!--CAROSELLO TESTIMONIANZE-->
 
+    <div id="carouselExampleCaptions" class="carousel slide text-center" data-bs-ride="false">
+        <h2 class="mb-3">Testimonials:</h2>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/LuciaeMarcoVegetarianifelici.jpg" class="d-block w-100" alt="vegan people">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/ragazzavegana.jpg" class="d-block w-100" alt="vegan people">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/ragazzaveganafelice.webp" class="d-block w-100" alt="vegan people">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
 
     <!--FOOTER-->
+    <div class="containerBig">
+        <div class="container">
+            <footer class="py-3">
+                <div class="nav justify-content-center border-bottom pb-3 mb-3">
+
+
+                    <p class="text-center text-muted">© 2022 Company, Inc</p>
+            </footer>
+        </div>
+
+    </div>
 
 
 

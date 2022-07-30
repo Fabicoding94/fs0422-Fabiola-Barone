@@ -8373,24 +8373,31 @@ textarea.form-control-lg {
     display: none !important; } }
 
 .navbar {
+  width: 100vw;
   position: sticky;
   top: 0;
   z-index: 100; }
 
-.nice-font {
+.navbar:hover {
+  background-image: linear-gradient(90deg, #82cdf9, #3ec13e); }
+
+.nice-font, h2, .h2 {
   font-family: 'Dancing Script', cursive; }
+
+.buttonh:hover {
+  background-image: linear-gradient(90deg, #82cdf9, #3ec13e); }
 
 .sectionF {
   background-image: url(https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1200x630_center,f_auto,q_auto:best/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
-.titolo {
+.titolo, .h2 {
   text-shadow: -2px 0 #0f500f, 0 2px #0f500f, 2px 0 #0f500f, 0 -2px #0f500f; }
 
 .first-section {
   width: 100vw;
-  height: 70vh; }
+  height: 55vh; }
 
 .first-btn {
   border-radius: 8px;
@@ -8398,3 +8405,61 @@ textarea.form-control-lg {
 
 .first-btn a {
   text-decoration: none; }
+
+.card4 {
+  background-image: url(../img/cesto-verdure-assortite-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.card5 {
+  background-image: url(../img/cotolette-18-720x720.webp);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.card3 {
+  background-image: url(../img/Vegan-Ricotta-4-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.card1 {
+  background-image: url(../img/cous-cous-salad4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.card2 {
+  background-image: url(../img/fried-tofu-with-lemon-9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.card6 {
+  background-image: url(../img/apple-cake-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.card:hover {
+  transform: scale(1.05); }
+
+.logo1 {
+  height: 100px;
+  width: 100px;
+  border: 1px solid white;
+  border-radius: 50%; }
+
+#carouselExampleCaptions {
+  width: 70vw;
+  height: auto;
+  margin: 10vh auto; }
+
+#certificateContainer {
+  width: 100vw;
+  height: 40vh;
+  padding-bottom: 30vh;
+  background-color: beige; }
+
+.containerBig {
+  width: 100vw;
+  background-color: #0f500f; }
+
+@media screen and (min-width: 288px) {
+  #custom-cards {
+    margin-top: 200ox; } }
