@@ -8389,6 +8389,10 @@ textarea.form-control-lg {
 .buttonh:hover {
   background-image: linear-gradient(90deg, #82cdf9, #3ec13e); }
 
+.nav-link:hover:hover {
+  background-color: #c5c5c5;
+  border-radius: 10px; }
+
 .sectionF {
   background-image: url(https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1200x630_center,f_auto,q_auto:best/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg);
   background-repeat: no-repeat;

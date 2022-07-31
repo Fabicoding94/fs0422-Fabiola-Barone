@@ -24,6 +24,11 @@
     background-image: linear-gradient(90deg, rgb(130, 205, 249), rgb(62, 193, 62)) ;
 }
 
+.nav-link:hover:hover{
+    background-color: rgb(197, 197, 197);
+   border-radius: 10px;
+}
+
 //------------------------SEZIONE PRIMO PIANO ----------------
 .sectionF{
     background-image: url(https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1200x630_center,f_auto,q_auto:best/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg);
