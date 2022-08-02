@@ -1,91 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
 </head>
+
 <body>
     <div id="todo1"></div>
     <div id="todo2"></div>
 
     <script>
 
+        //-------------------------------------------------INCAPSULAMENTO----------------------------------------------------------
+
+        /*si vanno ad incapsulare all'interno di un oggetto la variabili (proprietà) e le funzioni (metodi) che agiscono su di esse.
+
+        Ad esempio, pensiamo ad un conto bancario. Le informazioni utili (le proprietà) potranno essere rappresentate da: il numero di conto, il saldo, il nome del cliente, l'indirizzo, il tipo di conto, il tasso di interesse e la data di apertura.
+        Le azioni che operano su tali informazioni (i metodi) saranno, invece: apertura, chiusura, versamento, prelevamento, cambio tipologia conto, cambio cliente e cambio indirizzo. L'oggetto Conto incapsulerà queste informazioni e azioni al suo interno.
+
+        Come risultato, ogni modifica al sistema informatico della banca che implichi una modifica ai conti correnti, potrà essere implementata semplicemente nell'oggetto Conto.
+
+        Un altro vantaggio derivante dall'incapsulamento è quello di limitare gli effetti derivanti dalle modifiche ad un sistema software.
+        
+        Cerchiamo ora di esaminare una situazione che preveda una modifica da apportare rimanendo nel contesto del sistema bancario di cui abbiamo definito proprietà e metodi. Supponiamo che la banca in questione abbia deciso che se un determinato cliente ha un conto di credito nella stessa banca, tale conto possa essere utilizzato come copertura per eventuali scoperti sul conto corrente.
+        
+        Per gestire tale situazione, in un sistema non incapsulato, si procederebbe con un approccio decisamente poco efficace. Ovvero, non sapendo dove siano localizzati nel codice i punti in cui viene gestita l'operazione di prelievo, l'unica alternativa possibile sarebbe quella di ricercare dappertutto, aggiungendo la nuova funzionalità al programma ogni volta che si identifichi un punto da modificare.
+        
+        Con buona probabilità, se saremo stati bravi, saremo riusciti ad individuare l'80 per cento dei punti da modificare. Con l'utilizzo dell'incapsulamento sarà, invece, sufficiente identificare l'oggetto che gestisce l'azione di prelevamento (ovvero l'oggetto Conto) ed eseguire la modifica all'interno di esso, completando la variazione del sistema richiesta senza intaccare tutto il resto del sistema stesso.*/
+
+
+
+
+
+
+
         let app = {
-                input : '',
-                button : '',
-                list : '',
-                target : '',
-                todoName : this.target,
-                allTodos : localStorage.getItem(this.target) ? JSON.parse(localStorage.getItem(this.target)) : [],
-                init: function(target){
-                    
-                    this.target = document.querySelector(target)
-                    this.createBaseHTML()
+            input: '',
+            button: '',
+            list: '',
+            target: '',
+            todoName: this.target,
+            allTodos: localStorage.getItem(this.target) ? JSON.parse(localStorage.getItem(this.target)) : [],
+            init: function (target) {
 
-                },
-                createInput: function(){
-                    let input = this.createElementWithClass('input','form-control');
-                    input.type = 'text';
-                    this.input = input;
-                },
-                createbutton: function(){
-                    let button = this.createElementWithClass('button','btn btn-primary');
-                    button.innerHTML = 'Save';
+                this.target = document.querySelector(target)
+                this.createBaseHTML()
 
-                    button.addEventListener('click',() => this.addTodo() )
+            },
+            createInput: function () {
+                let input = this.createElementWithClass('input', 'form-control');
+                input.type = 'text';
+                this.input = input;
+            },
+            createbutton: function () {
+                let button = this.createElementWithClass('button', 'btn btn-primary');
+                button.innerHTML = 'Save';
 
-                    this.button = button;
-                },
-                addTodo: function(td){
-                    let todo = this.createElementWithClass('div','alert alert-success');
-                    todo.innerHTML = td || this.input.value;
-                    todo.addEventListener('click',() => {
-                        todo.remove()
-                        let index = this.allTodos.indexOf(this.input.value)  
-                        this.allTodos.splice(index,1)
-                        this.saveTodos()
-                    })
+                button.addEventListener('click', () => this.addTodo())
 
-                    this.allTodos.push(this.input.value)
+                this.button = button;
+            },
+            addTodo: function (td) {
+                let todo = this.createElementWithClass('div', 'alert alert-success');
+                todo.innerHTML = td || this.input.value;
+                todo.addEventListener('click', () => {
+                    todo.remove()
+                    let index = this.allTodos.indexOf(this.input.value)
+                    this.allTodos.splice(index, 1)
                     this.saveTodos()
+                })
 
-                    this.list.append(todo);
-                    this.input.value = '';
-                },
-                createBaseHTML: function(){
-                    
-                    //creo i containers
-                    let formContainer = this.createElementWithClass('div','container')
-                    let listContainer = this.createElementWithClass('div','container')
-                    
-                    //creo input
-                    this.createInput()
-                    
-                    //creo bottone
-                    this.createbutton()
+                this.allTodos.push(this.input.value)
+                this.saveTodos()
 
-                    //creo lista
-                    let list = this.createElementWithClass('div','row');
-                    this.list = list;
+                this.list.append(todo);
+                this.input.value = '';
+            },
+            createBaseHTML: function () {
 
-                    //inserisco gli elementi nei rispettivi container
-                    formContainer.append(this.input,this.button)
-                    listContainer.append(list)
-                    this.target.append(formContainer,listContainer)
+                //creo i containers
+                let formContainer = this.createElementWithClass('div', 'container')
+                let listContainer = this.createElementWithClass('div', 'container')
 
-                },
-                saveTodos: function(){
-                    localStorage.setItem(this.todoName,JSON.stringify(this.allTodos))
-                },
-                createElementWithClass: function(tag,className){
-                    let element = document.createElement(tag);
-                    element.className = className
-                    return element;
-                }
+                //creo input
+                this.createInput()
+
+                //creo bottone
+                this.createbutton()
+
+                //creo lista
+                let list = this.createElementWithClass('div', 'row');
+                this.list = list;
+
+                //inserisco gli elementi nei rispettivi container
+                formContainer.append(this.input, this.button)
+                listContainer.append(list)
+                this.target.append(formContainer, listContainer)
+
+            },
+            saveTodos: function () {
+                localStorage.setItem(this.todoName, JSON.stringify(this.allTodos))
+            },
+            createElementWithClass: function (tag, className) {
+                let element = document.createElement(tag);
+                element.className = className
+                return element;
+            }
         }
 
         app.init('#todo1')
@@ -94,4 +120,44 @@
     </script>
 
 </body>
+
 </html>
+
+/* ---------------Esempio di incapsulamento:
+
+function Parallelepipedo()
+{
+    var lunghezza = 5;
+    var altezza = 10;
+    var larghezza 4;
+    this.SetLunghezza = SetLunghezza;
+    this.SetLarghezza = SetLarghezza;
+    this.SetAltezza = SetAltezza;
+    this.MostraVolume = DisplayVolume;
+    function DisplayVolume()
+    {
+        alert( lunghezza * altezza * larghezza );
+    }
+    function SetLunghezza(lun)
+    {
+        lunghezza = lun;
+    }
+    function SetLarghezza( lar )
+    {
+        larghezza = lar;
+    }
+    function SetAltezza( alt )
+    {
+        altezza = alt;
+    }
+}
+var Parallelepipedo1 = new Parallelepipedo();
+var Parallelepipedo2 = new Parallelepipedo();
+Parallelepipedo1.SetLarghezza( 10 );
+Parallelepipedo1.SetLunghezza( 5 );
+Parallelepipedo1.SetAltezza( 6 );
+Parallelepipedo2.SetLarghezza( 7 );
+Parallelepipedo2.SetLunghezza( 2 );
+Parallelepipedo2.SetAltezza( 3 );
+Parallelepipedo1.MostraVolume();    // visualizza: 300
+Parallelepipedo2.MostraVolume();    // visualizza: 42 */
