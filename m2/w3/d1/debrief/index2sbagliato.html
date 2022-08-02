@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="nome">Nome: </label>
+    <input type="text" name="nome" class="name">
+    <label for="cognome">Cognome: </label>
+    <input type="text" name="cognome" class="surname">
+    <label for="data-nascita">Data di nascita: </label>
+    <input type="text" name="data-nascita" class="data">
+    <button class="bottone">Add</button>
+
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Congome</th>
+            <th>Data di nascita</th>
+        </tr>
+    </table>
+
+    <script>
+
+        let button = document.querySelector("#bottone");
+        let name = document.querySelector("#name")
+        let surname = document.querySelector("#surname")
+        let birthday = document.querySelector("#data")
+
+        button.addEventListener('click', function () {
+
+
+            let riga = document.createElement('tr')
+            let cellaNome = document.createElement('td')
+            let cellaCognome = document.createElement('td')
+            let cellaData = document.createElement('td')
+
+
+
+            let utente = new User(nome.value, cognome.value, data.value)
+        }
+        
+            class User {
+                constructor(nome, cognome, nascita, target) {
+                    this.nome = nome;
+                    this.cognome = cognome;
+                    this.dataNascita = nascita;
+                    this.target = document.querySelector(target);
+                }
+            }
+
+            cellaNome.innerHTML = this.nome;
+        cellaCognome.innerHTML = this.cognome;
+        cellaData.innerHTML = this.dataNascita;
+
+
+        table.append('riga')
+        riga.append('cellaNome', 'cellaCognome', 'cellaData')
+        this.target.append(tr)
+        }
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
