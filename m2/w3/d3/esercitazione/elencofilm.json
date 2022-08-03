@@ -1,0 +1,45 @@
+[
+    {
+        "titolo": "Titanic",
+        "regista": "James Cameron",
+        "anno": 1997
+
+      },
+
+
+      {
+        "titolo": "Pulp Fiction",
+        "regista": "Quentin Tarantino",
+        "anno": 1994
+
+      },
+
+      {
+        "titolo": "The Gladiator",
+        "regista": "Ridley Scott",
+        "anno": 2000
+
+      },
+
+      {
+        "titolo": "The Lord of Ring",
+        "regista": "Peter Jackson",
+        "anno": 2001
+
+      },
+
+      {
+        "titolo": "Troy",
+        "regista": "Wolfgang Petersen",
+        "anno": 2004
+
+      },
+
+      {
+        "titolo": "Interstellar",
+        "regista": "Christopher Nolan",
+        "anno": 2004
+
+      }
+
+]

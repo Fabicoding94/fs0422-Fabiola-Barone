@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Jane",
+        "surname": "Doe",
+        "age": 30
+
+      },
+
+
+      {
+        "name": "Luis",
+        "surname": "Ranieri",
+        "age": 50
+      },
+
+      {
+        "name": "Mary",
+        "surname": "Allen",
+        "age": 22
+      },
+
+      {
+        "name": "Blair",
+        "surname": "Waldorf",
+        "age": 30
+
+      },
+
+
+      {
+        "name": "Mario",
+        "surname": "Rossi",
+        "age": 50
+      },
+
+      {
+        "name": "Charles",
+        "surname": "Bass",
+        "age": 26
+      }
+
+
+]

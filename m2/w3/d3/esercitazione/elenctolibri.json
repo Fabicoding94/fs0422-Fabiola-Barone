@@ -1,0 +1,42 @@
+[
+    {
+        "titolo": "Cien anos de soledad",
+        "autore": "Garcia Marquez",
+        "anno": 1967
+
+      },
+
+
+      {
+        "titolo": "Jonathan Livingstone Seagull",
+        "autore": "Richard Bach",
+        "anno": 1970
+
+      },
+
+      {
+        "titolo": "The picture of Dorian Gray",
+        "autore": "Oscar Wilde",
+        "anno": 1890
+
+      },
+
+      {
+        "titolo": "Il nome della Rosa",
+        "autore": "Sean Connery",
+        "anno": 1930
+
+      },
+      {
+        "titolo": "Le Petite Prince",
+        "autore": "Antoine de Saint-Exupery",
+        "anno": 1943
+
+      },
+      {
+        "titolo": "The Lord of the Rings",
+        "autore": "J.R.R.Tolkienn",
+        "anno": 1955
+
+      }
+]
