@@ -43,11 +43,22 @@ class Person {
    
    
    
-       // class Paginazione {
+       class Paginazione {
    
-       //     constructor(items, pageSize)
-       //     {
-       //         this.items = [];
-       //     }
+        constructor(classname, items, pageSize)
+        { 
+            this.classname= classname;
+            items = getElementsByClassName("classname")
+            this.items = items;
+            this.pageSize = pageSize;
+         }
+
+
+         dividiPerPagine (numeroElementiTot, numeroElementiPagina ){
+
+            this.items.lenght = numeroElementiTot;
+
+
+         }
    
-       // }
+     }
