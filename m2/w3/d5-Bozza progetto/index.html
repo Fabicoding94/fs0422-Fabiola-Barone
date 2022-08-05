@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bozza progetto</title>
+
+    
+
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Users di una piattaforma:</h1>
+
+   
+
+
+    <div id="tutor"></div>
+
+    <script>
+        let target = document.querySelector('#tutor')
+
+        let container = document.createElement('div')
+        container.classList.add("container")
+        let riga = document.createElement('div')
+        riga.classList.add("row")
+
+        container.append(riga)
+        target.append(container)
+
+
+        
+
+
+
+        fetch('users.json')
+            .then(res => res.json())
+            .then(users => {
+
+                for (let user of users) {
+
+
+
+                    let div = document.createElement('div')
+                    div.classList.add("colonna")
+                    
+                    let img = document.createElement('img')
+                    img.classList.add("images")
+                    img.src = user.profileURL
+
+                    let nome =  document.createElement('p')
+                    nome.classList.add("paragrafo")
+                    nome.innerHTML = ( "Nome completo:" + " " + user.firstName + " " + user.lastName)
+
+                    let nickname = document.createElement('p')
+                    nickname.classList.add("paragrafo")
+                    nickname.innerHTML = ( "Nickname:" + " " + user.username )
+
+                    let genere = document.createElement('p')
+                    genere.classList.add("paragrafo")
+                    genere.innerHTML = ( "Gender:" + " " + user.gender )
+
+                    let email = document.createElement('p')
+                    email.classList.add("paragrafo")
+                    email.innerHTML = ( "Email:" + " " + user.email )
+
+
+
+                    
+                    div.append(img)
+                    div.append(nickname)
+                    div.append(nome)
+                    div.append(genere)
+                    div.append(email)
+
+                    riga.append(div)
+
+
+
+
+                }
+
+            })
+
+
+
+           
+    </script>
+
+    
+
+
+
+
+
+
+
+</body>
+
+</html>
