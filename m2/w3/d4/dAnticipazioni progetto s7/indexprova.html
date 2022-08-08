@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bozza progetto</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Users di una piattaforma:</h1>
+
+    <div class="d-none" id="card-template">
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item"></li>
+              <li class="list-group-item"></li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link"></a>
+              <a href="#" class="card-link"></a>
+            </div>
+          </div>
+    </div>
+
+    <div id="lista"></div>
+
+
+
+
+    <script> 
+
+    const lista = document.querySelector('#lista')
+    
+    fetch('users.json')
+    .then(res => res.json())
+    .then(res => {
+
+
+       for(let user of users){
+       
+        let card= document.querySelector('#card-template .card').cloneNode(true);
+
+        let img = card.querySelector('.card-img-box');
+        img.src= user.image  ;
+
+        let nameBox = document.querySelector('.card-title');
+
+        nameBox.innerHTML = user.nome
+
+        lista.append(card)
+
+       }
+    } )
+    
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

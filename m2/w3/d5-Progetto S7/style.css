@@ -1,0 +1,32 @@
+
+
+
+
+.images{
+    height: 200px;
+    width: auto;
+
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   justify-content: center;
+   justify-content: space-evenly ;
+}
+
+.colonna{
+    margin: 50px;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 5%
+}
+
+.colonna:hover{
+    transform:scale(1.2);
+}
+
+.paragrafo{
+    text-align: center;
+}
