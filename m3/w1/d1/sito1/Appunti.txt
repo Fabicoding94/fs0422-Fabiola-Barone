@@ -1,0 +1,49 @@
+TYPESCRIPT
+
+Ci porta il codice ad un livello di qualità superiore.
+Si danno per scontati HTML, CSS, JS.
+Intrdurremo Angular per la gestione di un CMR. Riutilizzeremo tutto in modo diverso, da html in poi.
+
+TypeScript = nuovo linguaggio di programmazione, sviluppato da Microsoft. Estende il ling di JavaScript portandolo ad un livello successivo nella programmazione ad oggetti. Estende la programmazione ad oggetti. Angular è scritto i TypeScript. Noi scriviamo del cosice che serverà a scrivere un JS. 
+
+JavaScript è un linguaggio debolmente tipizzato. Significa che è un ling che non ti obbliga a dichiarare il tipo di dato. (Anche PHP è deb tipizzato).
+
+Se non si ha TypeScript si va sul sito ufficiale.
+
+----> 
+INSTALLIAMO TYPESCRIPT inserendo sul Terminal: 
+
+$ npm install -g typescript
+
+
+----> 
+Poi scrivo sul terminal bash:
+
+" $ tsc script.ts" 
+
+e in automatico mi crea un file Javascript identico al ts. Anche se scrivo solo "tsc script" lo trova.
+
+----> 
+"$ tsc "nomefile" -watch":
+
+ fa si che ogni volta che salvo il typescritp, si aggiorna il js.
+
+Tipizzazione forte = specifichiamo il tipo di variabile. Es.: "let a:string = ciao"; 
+
+
+---->
+" $ tsc script condizioni --outFile js/script.js -w"
+
+fa si che se creo un nuovo file typescript (che si chiama "condizioni.ts"), il suo contenuto viene aggiunto al js che ho linkato nell'html.
+In realtàmi ha creato in automatico una cartella js, con dentro script.js , che contiene il contenuto dei due file typescript insieme. Tocca a me andarr sull'html e anche a mdificare lo script.
+
+---------CICLI-------------- : 
+serie di comandi che vengono su un set di dati.
+
+----- do-while = il comando viene eseguito almeno una volta, anche se la condizione non è mai soddisfata
+
+----- while = se la cond non si verifica mai, il comando non viene eseguito mai.
+
+----- for = per incrementare o decrementare un valore.
+
+

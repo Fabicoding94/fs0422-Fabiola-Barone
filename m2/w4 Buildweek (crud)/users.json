@@ -1,0 +1,23 @@
+{
+   "users" : [
+    {
+      "username": "john",
+      "firstName": "John",
+      "lastName": "Doe",
+      "gender": "Male",
+      "profileURL": "img/male.png",
+      "email": "john.doe@example.com",
+      "tel": "+39 347 657 3276",
+      "fatture": 
+
+        {
+            "numFattura": 0,
+            "importo": 165,
+            "pagament": true
+
+        }
+      
+    }
+]
+
+}

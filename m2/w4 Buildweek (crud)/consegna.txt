@@ -1,0 +1,7 @@
+L'esercizio consiste nella creazione di un pannello per la gestione utenti per le operazioni CRUD tramite api REST.
+Per i dati Ã¨ possibile usare un servizio come questo: https://jsonplaceholder.typicode.com/users
+E' necessario implementare tutte le API disponibili, successivamente, se lo si desider Ã¨ possibile estendere l'esercizio aggiungendo:
+1. validazione dei form
+2. ricerca interna
+3. paginazione
+4. eventualmente ripetere l'esercizio con altre entitÃ  (todo, post etc)
