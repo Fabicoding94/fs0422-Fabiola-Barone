@@ -1,0 +1,8 @@
+
+
+Il `backtick` si fa ALT + 9 + 6 
+
+
+"tsc --init" compare un tsconfig.json
+(togliamo dai commenti righe 50 e 51)
+
