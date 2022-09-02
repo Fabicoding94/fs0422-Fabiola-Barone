@@ -1,14 +1,13 @@
-import {Address as a} from './Address.ts'
+import {Address} from './Address'
 
-class User {
+export class User {
 
-    protected id: number|undefined;
-    id:number|undefined;
-    name: string;
+    protected id:number|undefined;
+    name:string;
     lastname:string;
     address:Address|undefined;
-    billingAddress:Address;
-    constructor(name:string; lastname:string){
+    billingAddress:Address|undefined;
+    constructor(name:string, lastname:string){
         this.name = name;
         this.lastname = lastname;
     }
@@ -16,16 +15,21 @@ class User {
     set setAddress(address:Address){
         this.address = address;
     }
-     
+    set setBillingAddress(address:Address){
+        this.billingAddress = address;
+    }
+
 }
 
+let user:User = new User('mario','rossi');
+
+/////////////////////////////////////
+let address:Address = new Address('via roma 1','roma','italia',65455);
+user.setAddress = address
 
 
 /*Terminal -> Git Bush -> "cd mdelli"; -> "tsc --init"
 
 */
 
-let user:User = ner User('mario', 'rossi')
 
-let address:Address = new Address ('via roma 1', 'roma', 'italia', 00191)
-user.setAddress = address

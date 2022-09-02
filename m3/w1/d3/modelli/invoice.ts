@@ -1,16 +1,16 @@
-
-import {User} from './User';
-import {Address} from './Address'
+import { User } from './User';
+import { Address } from './Address';
 
 class Invoice{
     id:number|undefined;
-    date!: Date;
-    userId!: number;
-    user!: User;
-    billingAddress!: Address;
+    readonly date!:Date;
+    expiration!:Date;
+    userId!:number;
+    user:User|undefined;
+    billingAddress!:Address;
     rows:any[] = [];
 
-    constructor(billingAddress: Address){
+    constructor(billingAddress:Address){
         this.billingAddress = billingAddress || this.user?.billingAddress
     }
-} 
+}
