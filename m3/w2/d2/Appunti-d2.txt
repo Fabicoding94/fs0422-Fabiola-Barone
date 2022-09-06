@@ -1,0 +1,60 @@
+Angular lavora su una singola pagina index.html.
+SPA= single page app. Richiede meno tempo e minore larghezza di banda.
+
+Motore di pre-rendering: Angular Universal.
+
+Con Angular creiamo un sito statico, che diventa dinamico con le chiamate API.
+
+Atomic design: 5 livelli (atomi, molecole, organismi, template, pagina)
+
+
+--------ES6---------
+ECMA Script
+
+-----------
+
+Angular CLI: 
+
+Per lavorare con angular servono:
+1)node.js;
+2)npm; //gestore di pacchetti insieme a node.js
+3)Angular CLI
+npm install -g @angular/cli
+
+Quando scarico un pacchetto Angular , non funziona se non faccio a terminal:
+npm install
+----------
+
+Crea nuovo Ang:
+Terminal: $ ng new nomeapplicazione
+
+------------
+
+ng generate
+
+ng add
+
+ng update (aggiorna librerie)
+
+-------------
+
+ng new angular1
+y
+
+ng s -o (apriamo il live server)
+----------
+
+
+Per installare Bootstrap apro un nuovo terminale
+
+per collegare Bootstrap, andiamo su "angular.json" e a riga 26 copiamo:
+node_modules/bootstrap/dist/css/bootstrap.min.css
+
+
+ng g c main/header
+ng g c main/footer
+
+--------
+
+Se dimentico app-routing lancio il comando:
+ng generate module app-routing --flat --module=app

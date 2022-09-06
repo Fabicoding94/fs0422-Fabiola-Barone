@@ -1,0 +1,36 @@
+---------ANGULAR----------
+----Giorno 1
+
+
+Serve a creare applicazioni mobile e desktop.
+
+Terminal - Git bash:
+$ cd angular1
+
+$ ng serve --open
+
+Angular serve a creare:
+-SPA = single page app ;
+-Attenzione , dal 2010 ad oggi Angular è cambiato completamente.
+
+Angular 1 era basato su JS (Javascript).
+Angular 2 è basato su TS (Typescript).
+
+
+CLI= command line interface. Ce l'ha Angular, ma non solo. Significa che utilizziamo tantissimo il Terminale. (Viene chiesto alle domande dei colloqui).
+
+------Installiamo angular. Terminal:
+       $ npm install -g @angular/cli
+
+Poi:
+       $ ng new angular2
+
+
+poi: 
+    $ ng s -o
+
+
+
+-----Installo Estensione di Angular:
+
+"Angular Essential"

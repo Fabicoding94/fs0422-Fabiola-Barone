@@ -1,0 +1,22 @@
+
+Terminal:
+
+-----$ ng new angular-consegna   //  apre il pacchetto di angular
+
+Poi:
+
+-----$ npm i bootstrap    // installa bootstrap, che si trva dentro node_modules
+
+
+Poi:
+(passiamo all'interno della cartella "app".
+
+cd angular-consegna
+cd src/app)
+
+----$ ng g c card
+
+
+Per aprire il live server:
+
+-----$ ng s -o
