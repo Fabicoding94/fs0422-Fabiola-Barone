@@ -41,7 +41,7 @@ ng update (aggiorna librerie)
 ng new angular1
 y
 
-ng s -o (apriamo il live server)
+ng s -o (apre il live server e fa il compiling)
 ----------
 
 
