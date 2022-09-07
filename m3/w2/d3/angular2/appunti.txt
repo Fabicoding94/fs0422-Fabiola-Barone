@@ -1,0 +1,17 @@
+Quando apro un progetto ci servono 2 terminali.
+1)ng new angula2;
+
+2) cd angular2 ; nmp i bootstrap
+
+1)  ng s -o
+
+
+su angular.json
+"node_modules/bootstrap/dist/css/bootstrap.min.css",
+
+CREA SERVICE:
+
+ng g s service
+
+
+ng g class user

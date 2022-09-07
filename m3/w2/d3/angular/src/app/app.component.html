@@ -1,0 +1,31 @@
+<div class="container">
+<div class="row">
+  <div class="col-6">
+    <form action="">
+<input
+placeholder="Nome" name="name" [(ngModel)]="Newuser.name" class="form-control" type="text">
+<input
+placeholder="Cognome" name="cognome" [(ngModel)]="cognome"class="form-control" type="text">
+<button class="btn btn-primary">Invia</button>
+
+    </form>
+      </div>
+      <div class="col-6">
+        <table>
+          <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Cognome</th>
+          </tr>
+          <tr *ngFor="let user of allUser; let i = index">
+            <td>{{i}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.lastname}}</td>
+
+          </tr>
+        </table>
+        lista utenti
+      </div>
+</div>
+
+</div>
