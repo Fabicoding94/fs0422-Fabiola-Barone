@@ -1,0 +1,49 @@
+Installa "Angular1" (terminal: ng new angular1"; invio; y invio; invio)
+
+In un terminale diverso installa bootstrap (apri nuovo terminale; git bush; npm i bootstrap; invio)
+
+
+Vai su angular.json e incolla alla riga 26 "node_modules/bootstrap/dist/css/bootstrap.min.css", ; salva.
+
+
+ng g c pages/home
+
+ng g c pages/posts
+
+ng g c pages/posts/new
+
+ng g c pages/posts/edit
+
+ng g c pages/posts/list
+
+ng g c sections/header
+
+
+App-routing-mod..
+5
+{
+  path: '',
+  component: HomeComponent
+}
+
+(foto ordine)
+
+-post.component.html
+
+-terminale: ng g s post
+
+-post.service.ts
+
+-Sul post.srvice.ts creo la crud
+
+
+
+
+
+ULTIMI != min
+
+divective
+ng g directive
+
+pipe
+ng g pipe

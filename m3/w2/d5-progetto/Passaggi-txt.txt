@@ -1,0 +1,31 @@
+1)Creo il progetto dal terminale (git bush).  ng new todo-project (y, scss)
+
+2)Svuoto app.component.html e creo la lista (div>ul>li>div). Inserisco <li *ngFor="let todo of todos"></li> alla riga 3.
+
+3)Vado su app.component.ts e cancello la riga 9 ( title = 'todo-project';). Scrivo :todos: Todo[]. E' un array di todo che al momento non abbiamo. 
+
+4)Andiamo a creare un modello per l'array todo. Creiamo la cartella manualmente nella src chiamata "models". Dentro questa creiamo un file "todo.model.ts"
+Creiamo quindi al suo interno un modello, ovvero una classe Todo con costruttore.
+
+5)Importo il modello Todo nella app.component.ts. Nello stesso aggiungo un array Todo. Adesso la classe todo è definita.
+
+6)Vado nell'html di app.component e inserisco <div>{{this.todo.title}}</div>.
+
+7)Installo un pacchetto che mi servirà per le icone
+npm i materialize-css
+npm i material-icons
+npm i material-design-icons
+collego nel file angular.json questi pacchetti nello style
+"./node_modules/material-design-icons/iconfont/material-icons.css",
+"./node_modules/materialize-css/dist/css/materialize.min.css",
+
+8)Inserisco 2 bottono nell'html di app.component, usando le icone di material:
+<button><i class="material-icons">check</i></button>
+        <button><i class="material-icons">close</i></button>
+Le classi class="btn-floating waves-effect waves green" del tag button danno un design più carino.
+
+
+
+
+
+fetch rit - db.json - 

@@ -1,0 +1,17 @@
+<h1>My TODO-list</h1>
+<div class="container">
+
+  <ul class="list">
+    <li *ngFor="let todo of todos">
+      <div>
+        <div class="column">{{this.todo.title}}</div>
+        <div class="column">
+          <button class="btn-floating waves-effect waves green"><i class="material-icons">check</i></button>
+          <button class="btn-floating waves-effect waves red"><i class="material-icons">close</i></button>
+        </div>
+
+
+      </div>
+    </li>
+  </ul>
+</div>

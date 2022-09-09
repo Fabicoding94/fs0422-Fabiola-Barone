@@ -1,0 +1,40 @@
+creo un db.json
+
+
+(chiamata put/patch
+get
+post  http://localhost:3000/users
+put
+delete)
+
+-Vai su package.json scrivi riga 10 :
+"backend": "json-server db.json"
+
+-Terminal, creiamo le cartelle:
+n g c page/home
+n g c page/posts
+
+-Vai in app-routing.models.ts
+
+Routes = [
+  {
+    path:'',
+    component: HomeComponent
+  }
+]
+
+
+-Per creare il service del posts:
+ng g s posts
+
+-ng g class post
+
+post.ts
+
+-Vai in posts.service.ts: aggiungi la funzione "getAllPost".
+
+-Nel db.json creo post a mano.
+
+-In postComponent .ts inietto il service nel constructor.
+
+-Vai in post.service.ts e fai la  getAllPosts() con la fetch ritardata.

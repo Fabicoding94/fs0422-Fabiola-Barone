@@ -1,0 +1,26 @@
+h1{
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.container{
+  margin: 0 auto;
+  width: 30vw;
+}
+
+.list> li{
+  margin-top: 5px;
+}
+
+.list >li >div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list button{
+  margin-left: 5px;
+}
+
+
+
