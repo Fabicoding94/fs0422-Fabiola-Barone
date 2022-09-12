@@ -3,6 +3,19 @@ h1{
   width: fit-content;
 }
 
+.todo-form{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.todo-form input{
+
+  width: 80%;
+
+}
+
 .container{
   margin: 0 auto;
   width: 30vw;

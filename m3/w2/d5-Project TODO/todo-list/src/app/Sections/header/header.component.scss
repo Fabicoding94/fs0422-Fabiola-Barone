@@ -1,0 +1,26 @@
+header{
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+a{
+  color: rgb(246, 174, 111);
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: 1px solid orange;
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+
+a:hover{
+  background-color: orange;
+  color: white
+}
+
+
+
+

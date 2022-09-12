@@ -6,6 +6,21 @@
 
 4)Andiamo a creare un modello per l'array todo. Creiamo la cartella manualmente nella src chiamata "models". Dentro questa creiamo un file "todo.model.ts"
 Creiamo quindi al suo interno un modello, ovvero una classe Todo con costruttore.
+export class Todo {
+  public id: Guid;
+  public title: string;
+  public isCompleted: boolean;
+  constructor(id: number, title: string, isCompleted: boolean){
+    this.id = id;
+    this.title = title;
+    this.isCompleted = isCompleted;
+
+  }
+}
+
+Scarichiamo il pacchetto di Guid , che attribuisce i valori all'id. 
+npm i guid-typescript
+Inseriamo quindi l'inport di Guid nel file todo.model.ts
 
 5)Importo il modello Todo nella app.component.ts. Nello stesso aggiungo un array Todo. Adesso la classe todo è definita.
 
@@ -24,8 +39,30 @@ collego nel file angular.json questi pacchetti nello style
         <button><i class="material-icons">close</i></button>
 Le classi class="btn-floating waves-effect waves green" del tag button danno un design più carino.
 
+//
+9)Creo il db.json e faccio un array di todo. Vado nel file package.json e a riga 10 collego il file db.json scrivendo:
+"backend": "json-server db.json".
+10)Creo il todo service.ts , dove inserisco la fetch
+(parte non vista nel tutorial)
+//
 
+11)Creo il form nella pagina principale, con un input e un bottone.
 
+12)Andiamo in app.module.ts e importiamo FormsModules (negli import) e questo a riga 2: import { FormsModule } from '@angular/forms' (si può aggiungere anche grazie alla correzione automatica);
 
+13)Andiamo in ap.component.ts e dentro al tag del form scriviamo una variabile #f="ngForm" e (ngSubmit)="onSubmit(f)".
+Nell'app.component.ts creiamo un metodo. Il seguente metodo prende i dati che inserisco nel form e crea un nuovo elemento todo, aggiungendolo all'array todos e foi ripulisce il campo di form.
+
+onSubmit(form: NgForm){
+let todo = new Todo(3, form.value.title, false)
+this.todos.push(todo)
+form.resetForm()
+}
+
+14)Adesso inseriamo le funzionalità ai bottoni di check e delete. Scriviamo due eventi di click (click)="onComplete(this.todo.id)" poi nell'app.component.ts vado a creare i metodi corrispondenti.
 
 fetch rit - db.json - 
+
+
+Aiuti video youtube:
+-Create an Angular ToDo App From Scratch - Learn Template Forms in Angular

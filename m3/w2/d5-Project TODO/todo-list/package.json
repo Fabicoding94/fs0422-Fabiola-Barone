@@ -1,5 +1,5 @@
 {
-  "name": "todo-project",
+  "name": "todo-list",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "backend": "json-server db.json"
+    "backend": "json-server db.json -w"
   },
   "private": true,
   "dependencies": {
@@ -19,9 +19,6 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
-    "guid-typescript": "^1.0.9",
-    "material-icons": "^1.11.11",
-    "materialize-css": "^1.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

@@ -1,0 +1,13 @@
+1)Creo il db.json
+2)Collego il db.json nel package.json a riga 10, scrivendo: "backend": "json-server db.json -w"
+3)Creo la cart Models con dentro todo.ts. Inserisco la class Todo con costruttore.
+4)Creo la cart Sections con header (ng g c Sections/headers)
+5)Creo la cart Pages, poi le 3 cartelle al suo interno. $ng g c Pages/home;  $ng g c Pages/tasts-list ; $ng g c Pages/tasks-completed;
+6)Creo il service : ng g s (nome: todos).
+
+7)Vado in app.component.html lo svuoto , poi inserisco i tag.
+
+8)In un terminale diverso avvio il backend. Prima mi assicuro di essere sulla cart giusta (altrimenti: cd todo-list)
+Poi npm run backend. Così ho il link al json, che me lo dà il terminale, ed è http://localhost:3000
+
+9)Ho scritto i metodi della service. Sono metodi che fanno delle chiamate fetch e restituiscono delle promise.

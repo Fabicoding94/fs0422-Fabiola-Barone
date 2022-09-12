@@ -1,13 +1,19 @@
 <h1>My TODO-list</h1>
 <div class="container">
 
+
+  <form class="todo-form" action="" #f="ngForm" e (ngSubmit)="onSubmit(f)">
+      <input type="text" id="title" name="title" ngModel="">
+      <button type="submit" class="btn-floating waves-effect waves light blue"><i class="material-icons">add</i></button>
+  </form>
+
   <ul class="list">
     <li *ngFor="let todo of todos">
       <div>
         <div class="column">{{this.todo.title}}</div>
         <div class="column">
-          <button class="btn-floating waves-effect waves green"><i class="material-icons">check</i></button>
-          <button class="btn-floating waves-effect waves red"><i class="material-icons">close</i></button>
+          <button (click)="onComplete(this.todo.id)" class="btn-floating waves-effect waves green"><i class="material-icons">check</i></button>
+          <button (click)="onDelete(this.todo.id)" class="btn-floating waves-effect waves red"><i class="material-icons">close</i></button>
         </div>
 
 

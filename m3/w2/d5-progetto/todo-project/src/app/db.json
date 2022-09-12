@@ -1,0 +1,22 @@
+
+{
+
+  "todos":[
+    {
+      "id":1,
+      "title":"Comprare da mangiare al gatto",
+      "isCompleted":false
+    },
+    {
+      "id":2,
+      "title":"Stirare i vestiti",
+      "isCompleted":false
+    }, {
+      "id":3,
+      "title":"Pagare le bollette",
+      "isCompleted":false
+    }
+
+  ]
+
+}

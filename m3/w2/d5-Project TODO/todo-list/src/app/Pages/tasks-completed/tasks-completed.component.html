@@ -1,0 +1,13 @@
+
+<div *ngIf="allTodos.length == 0">Loading...</div>
+<ng-container *ngFor="let todo of allTodos">
+  <div class="listContainer">
+    <div class="task">{{todo.title}}</div>
+    <div class="bottoni">
+     <button (click)="delete(todo)">Delete</button>
+    </div>
+
+  </div>
+</ng-container>
+
+
