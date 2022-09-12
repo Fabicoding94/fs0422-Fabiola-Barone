@@ -11,3 +11,12 @@
 Poi npm run backend. Così ho il link al json, che me lo dà il terminale, ed è http://localhost:3000
 
 9)Ho scritto i metodi della service. Sono metodi che fanno delle chiamate fetch e restituiscono delle promise.
+
+
+
+-----------------
+Quando apri il progetto ricorda di avviare 2 terminali:
+
+1) cd todo-list  ; poi  ng s -o
+
+2) cd todo-list ; npm run backend (avvia in backend la lettura del db.json)

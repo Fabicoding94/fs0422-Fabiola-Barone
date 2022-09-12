@@ -57,6 +57,7 @@ completed(todo : Todo){
     this.allTodos = res.filter(todo => todo.completed === true)
   })
  }, 2300)
+
 }
 
 

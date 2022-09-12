@@ -1,0 +1,29 @@
+terminale1:
+ng new ajax
+
+terminale 2: npm i bootstrap
+In angula.json, a riga 31 "node_modules/bootstrap/dist/css/bootstrap.min.css", 
+
+
+package.json riga 10 : "backend": "json-server db.json --delay 2000"
+terminale 3: npm run backend
+
+
+trm 1:
+ng g c home
+ng g c posts
+
+REG: ultima ora della lez 12/09/22 
+
+post.ts  (modello classe, constructor)
+post.service.ts  (service)
+
+
+posts.comp.html form
+NgModel crea il collegamento tra il form e il ts
+
+in posts.component.ts aggiungo FormsModel
+
+--ultimi 15 min INTERCEPTOR
+
+ng g interceptor post

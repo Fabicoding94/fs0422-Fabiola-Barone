@@ -1,0 +1,22 @@
+ng g c interval
+
+app.component.html scrivo l'header +
+<router-outlet></router-outlet>
+
+app-routing.module - scriviamo le route (collegamenti tra il menù e le pagine)
+
+
+interval.component.ts 
+ngOnInit(): void {
+    inteval(1000).subscribe(n => console.log(n))
+}
+
+
+//
+
+Ripasso 2a settimana di javascript
+
+
+//-------
+Prog: ajax
+ng new ajax
