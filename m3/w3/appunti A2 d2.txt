@@ -1,0 +1,20 @@
+prog: ANGULAR
+npm i bootstrap
+
+CARTELLA forms
+
+CARTELLA NG-SUBMIT:
+--comp.HTML: creo il form
+     <form .container>.row>.action>div.form-group </form>
+
+--comp.ts: 
+ngForm
+
+[ngModel] comunico dal ts al HTML
+(ngModel) comunico dal html al ts
+
+--component.scss
+
+CARTELLA Ng.modelgroup:
+--compon.ts
+--aggiungo nell'app-routing.ts

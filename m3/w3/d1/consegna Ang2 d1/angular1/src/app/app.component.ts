@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Photo } from './photo';
 import { PhotoService } from './photo.service';
-import { PhotoInterceptor } from './photo.interceptor';
 
 @Component({
   selector: 'app-root',
