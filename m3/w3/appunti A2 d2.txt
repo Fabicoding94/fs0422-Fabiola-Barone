@@ -18,3 +18,15 @@ ngForm
 CARTELLA Ng.modelgroup:
 --compon.ts
 --aggiungo nell'app-routing.ts
+
+CARTELLA reactive-form:
+
+--comp.html: 
+.container>.row>form.col>input[placeholder]+div>input*3+div>button
+ 
+-----------------------------------------------------------
+CONSEGNA
+
+ aprire classe : ng g class Hero
+
+ aprire cartella: ng g c form
