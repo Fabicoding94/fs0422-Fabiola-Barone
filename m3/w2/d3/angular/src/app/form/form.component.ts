@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { User } from '../Models/user';
 
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
-export class FormComponent implements OnInit {
+export class FormComponent {
 
-  constructor() { }
+  @Output() onNewUserCreated = new EventEmitter<User>();
 
-  ngOnInit(): void {
+  newUser:User = new User('','');
+
+  sendDataToParent(){
+    this.onNewUserCreated.emit(this.newUser);//invio dati al genitore
   }
-
 }

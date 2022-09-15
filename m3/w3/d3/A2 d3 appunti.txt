@@ -1,0 +1,112 @@
+Argomenti: Autenticazione
+
+
+Prog: Angular1 (ng new angular1)
+pp.module è unaclass edecorata con il dec NgModule.
+Providerse serve a iniettare a mano dei service.
+
+(angular generate component)
+ng g c home 
+
+
+ng g c pizze/pizze
+ng g c pizze/pizzeList
+ng g c pizze/pizzeItem
+ng g c pizze/pizzeDetail
+
+-app-routing.module: scrivere i { path:'', component:''} ; { path:'Pizze', component:''}
+
+-app.comp.html: 
+Copio una header da bootstrap con il login.
+
+<router-outlet></router-outlet>
+
+Nelle pagine della navbar nei tag <a></a> inserisco i collegamenti [RouterLink]="['']"
+
+-pizze.component.html: <h1>le nostre pizze</h1>
+<router-outlet></router-outlet>.
+Nel path pizze agiuungo un children (che ha un suo path e component).
+
+-pizze-list.component
+
+-pizze-item.component.ts
+
+CARTELLA PRIMI:
+ng g c primi/primi
+
+(m = file module)
+ng g m primi/primi --flat
+ng g m primi/primiList
+ng g m primi/primiDetail
+ng g m primi/primiItem
+
+-primi.module.ts: contiene in declaration tutte le cartelle dei primi
+
+PRIMI.SERVICE:
+ng g s primi
+
+-primi.component.html
+
+ng g s primi/primi --skip-tests
+ng g m primi/primiRouting
+
+
+-primi-routing.module.ts
+
+--------------------------------------
+ng new angular2
+ANGULAR2
+
+npm i bootstrap
+ng s -o
+
+---JSON Server Auth---
+Terminal:
+npm install -D json-server json-server-auth 
+
+
+"backend": "json-server-auth db.json"
+
+
+-Creo il db.json manualmente; creo l'array di users
+avvio il backend
+npm run backend
+
+Modulo autenticazione:
+cd angular2
+
+ng g m auth (crea il modulo)
+
+ng g c auth/login (cero il login)
+
+-Auth-routing.module : 
+le rotte della zona auth vanno lì, nn i app-routing.
+
+se ngModule da errore, vado in auth.module.ts e aggiungo formsModule.
+
+-register.component.html
+
+
+serviceauth.service.ts
+
+ng g guard auth (genera una guardia, da mettere globalmente)
+
+ng g interceptor auth
+
+
+
+ng g s auth/auth
+
+ng g interface auth/Models/register
+
+------------------------------------
+
+ng generate module home --route home --module app-module
+
+ng generate module chi siamo --route chi siamo --module app-module
+
+ng generate module contatti --route contatti --module app-module
+
+ng generate module login --route login --module app-module
+
+ng generate module dashboard --route dashboard --module app-module

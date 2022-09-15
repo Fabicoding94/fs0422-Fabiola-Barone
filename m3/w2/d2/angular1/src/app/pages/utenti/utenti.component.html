@@ -1,18 +1,29 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <div *ngFor="let utente of utenti" class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{utente.name}}</h5>
-          <p class="card-text">{{utente.email}}</p>
-          <a [routerLink]="['/utenti',utente.id]" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
+      <form>
+        <input
+        class="form-control"
+        [(ngModel)]="newUser.name"
+        name="name"
+        type="text" placeholder="nome">
+        <input
+        class="form-control"
+        [(ngModel)]="newUser.email"
+        name="email"
+        type="email" placeholder="email">
+        <button (click)="addUser($event)" class="btn btn-primary">Inserisci</button>
+      </form>
+      {{newUser | json}}
     </div>
-    <div class="col-6">
-      <router-outlet></router-outlet>
-    </div>
+  </div>
+<div class="row">
+  <div class="col-6">
+    <app-utenti-card [utenti]="utenti"></app-utenti-card>
+  </div>
+  <div class="col-6">
+    <router-outlet></router-outlet>
+  </div>
 
-  </div>
-  </div>
+</div>
+</div>

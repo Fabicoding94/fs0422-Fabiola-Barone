@@ -1,34 +1,14 @@
 {
   "todos": [
     {
-      "title": "Fare la spesa",
-      "completed": false,
-      "id": 1
-    },
-    {
       "title": "Comprare il pane",
       "completed": false,
       "id": 2
     },
     {
-      "title": "Pulire casa",
-      "completed": true,
-      "id": 4
-    },
-    {
       "title": "Andare dall'estetista",
-      "completed": false,
+      "completed": true,
       "id": 5
-    },
-    {
-      "title": "Studiare Angular",
-      "completed": true,
-      "id": 6
-    },
-    {
-      "title": "Uscire",
-      "completed": true,
-      "id": 7
     }
   ]
 }

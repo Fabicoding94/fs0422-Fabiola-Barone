@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { User } from 'src/app/Models/user';
 
 @Component({
   selector: 'app-utenti-card',
@@ -7,8 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class UtentiCardComponent implements OnInit {
 
+  @Input() utenti!:User[];
 
-  @Input() utenti!: any ;
   constructor() { }
 
   ngOnInit(): void {

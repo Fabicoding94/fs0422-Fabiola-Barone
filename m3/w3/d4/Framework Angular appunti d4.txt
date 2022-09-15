@@ -1,0 +1,48 @@
+-----FRAMEWORK:-----
+Sconsigliato l'uso di due framework molto simili
+
+ANGULAR MATERIAL
+--------------------
+
+NG BOOTSTRAP, installa:
+
+ng add @ng-bootstrap/ng-bootstrap
+---------------------
+
+NG-ZORRO
+Caratterizzato da granularità
+ng add ng-zorro-antd
+yes, yes, it_IT, blank
+
+Su angular.json: (in styles, riga 35)
+src/theme.less (simile a scss).
+
+-----------------------
+Angular MATERIAL
+
+ng add @angular/material
+
+indigo/pink
+include and enable animation
+
+----------------------
+CDK = Prima faceva parte di Material, oggi può essere installato a parte.
+
+npm i @angular/cdk
+
+--------------------
+
+FLEX-LAYOUT
+
+----------
+
+
+ https://github.com/jeremyben/json-server-auth
+
+ ------------
+
+ $ ng generate module "nome" - - route "nome" - - module app.module
+
+
+"backend": "json-server-auth db.json"
+npm install -D json-server json-server-auth

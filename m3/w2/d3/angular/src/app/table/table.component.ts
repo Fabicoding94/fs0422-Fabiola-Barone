@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { User } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { User } from '../Models/user';
 
 @Component({
   selector: 'app-table',
@@ -8,9 +8,15 @@ import { User } from '@angular/core';
 })
 export class TableComponent implements OnInit {
 
+  @Input() allItems!:User[];
+
+  props:string[] = Object.keys(new User('',''));
+
+
   constructor() { }
 
   ngOnInit(): void {
+    this.props.push('Azioni')
   }
 
 }

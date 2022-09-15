@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { User} from './Models/User';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { User } from './Models/user';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,13 +8,24 @@ import { User} from './Models/User';
 })
 export class AppComponent {
 
-   allUser: User [] = []
+  log(): void {
+    console.log(this.pippo)
+    this.pippo.nativeElement.style.color = 'red'
+  }
 
-  newUser: User = new User ('', '')
+  @ViewChild('pippo') pippo!:ElementRef;
 
-  addUser(){
-    let userCopy = Object.assign({}, this.newUser)
-  this.allUser.push(this.newUser);
-}
+  allUsers: User[] = []
+
+  visible:boolean = true
+  visibleCss:boolean = true
+
+
+  addUser(event:User){
+    let userCopy = Object.assign({}, event)
+    this.allUsers.push(userCopy);
+  }
+
+
 
 }

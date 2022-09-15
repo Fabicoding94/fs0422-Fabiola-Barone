@@ -1,1 +1,11 @@
-<p>form works!</p>
+<form>
+  <input
+  placeholder="Nome" name="name"
+  [(ngModel)]="newUser.name"
+  class="form-control" type="text">
+  <input
+  placeholder="Cognome" name="lastname"
+  [(ngModel)]="newUser.lastname"
+  class="form-control" type="text">
+  <button (click)="sendDataToParent()" class="btn btn-primary">Invia</button>
+</form>
