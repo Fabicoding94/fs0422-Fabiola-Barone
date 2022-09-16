@@ -1,0 +1,28 @@
+
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>supervised_user_circle</mat-icon>
+  </button>
+  <span>My App</span>
+
+  <button mat-button  [routerLink]="['/']">Home</button>
+<mat-menu >
+
+</mat-menu>
+
+<button mat-button [routerLink]="['blog']">Blog</button>
+<mat-menu >
+
+</mat-menu>
+
+  <span class="example-spacer"></span>
+  <button mat-raised-button color="warn" (click)="openLogin()">Login</button>
+
+</mat-toolbar>
+
+
+<router-outlet></router-outlet>
+
+
+
+

@@ -1,0 +1,1 @@
+RXJS è una libreria per gestire gli eventi asincroni attraverso l'uso di "observable".
