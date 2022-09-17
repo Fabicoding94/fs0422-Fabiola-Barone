@@ -1,25 +1,28 @@
 <h1 mat-dialog-title>Add new Post</h1>
 <div mat-dialog-content>
-  <mat-form-field appearance="outline">
-    <mat-label>Post title</mat-label>
-    <input matInput placeholder="Title...">
-  </mat-form-field>
-  <mat-form-field appearance="outline">
-    <mat-label>Post content</mat-label>
-    <textarea matInput placeholder="content"></textarea>
-  </mat-form-field>
-  <mat-form-field appearance="outline">
-    <mat-label>Choose a date</mat-label>
-    <input matInput [matDatepicker]="picker">
-    <mat-hint>MM/DD/YYYY</mat-hint>
-    <mat-datepicker-toggle matSuffix [for]="picker">
-      <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
-    </mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
-  </mat-form-field>
+  <form [formGroup]= "postForm" action="">
+    <mat-form-field appearance="outline">
+      <mat-label>Post title</mat-label>
+      <input [(ngModel)]="post.title" name="title" formControlName="title" matInput placeholder="Title...">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Post content</mat-label>
+      <textarea [(ngModel)]="post.content" name="content" formControlName="content" matInput placeholder="content"></textarea>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Choose a date</mat-label>
+      <input [(ngModel)]="post.data" name="date" formControlName="date" matInput [matDatepicker]="picker">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker">
+        <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+      </mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+  </form>
 
 </div>
-<div mat-dialog-action [align]="'end'">
+<div  style="margin-top: 20px;" mat-dialog-action [align]="'end'">
   <button mat-raised-button color="warn" mat-dialog-close>Close</button>
-  <button mat-raised-button color="primary" >Save</button>
+  <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addPost()" >Save</button>
 </div>

@@ -1,0 +1,62 @@
+{
+  "posts": [
+    {
+      "title": "Buongiornissimo, Kaffèèèè??!!!???",
+      "content": "Ciò che non ti uccide ti fortifica!",
+      "date": "2022-09-17T00:35:38.435Z",
+      "id": 4
+    },
+    {
+      "title": "Hello World!",
+      "content": "My name is Fabiola and I'm a developer!",
+      "date": "2022-09-17T01:07:56.013Z",
+      "id": 5
+    },
+    {
+      "title": "Ciao a tutti i miei amici di My App",
+      "content": "Come state?",
+      "date": "2022-09-17T01:09:53.075Z",
+      "id": 6
+    },
+    {
+      "title": "ciao",
+      "content": "ciaooooooooo",
+      "date": "2022-09-17T01:19:02.545Z",
+      "id": 7
+    },
+    {
+      "title": "Adesso vado a dormire",
+      "content": "Ho sonno",
+      "date": "2022-09-17T01:24:05.604Z",
+      "id": 8
+    },
+    {
+      "title": "Ho davvero sonno",
+      "content": "Buona notte",
+      "date": "2022-09-17T01:24:52.969Z",
+      "id": 9
+    },
+    {
+      "title": "Ultimo post of the day",
+      "content": "Ciaone",
+      "date": "2022-09-17T01:27:24.970Z",
+      "id": 10
+    },
+    {
+      "title": "Ciao",
+      "content": "Uffaaaaaaaaaaaaaaaaaaaa",
+      "date": "2022-09-17T01:31:18.265Z",
+      "id": 11
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
