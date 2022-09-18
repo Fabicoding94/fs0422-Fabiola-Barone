@@ -1,24 +1,28 @@
+<div class="nav-bar">
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>supervised_user_circle</mat-icon>
+    </button>
+    <span>My App</span>
 
-<mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>supervised_user_circle</mat-icon>
-  </button>
-  <span>My App</span>
+    <button mat-button  [routerLink]="['home']">Home</button>
+  <mat-menu >
 
-  <button mat-button  [routerLink]="['/']">Home</button>
-<mat-menu >
+  </mat-menu>
 
-</mat-menu>
+  <button mat-button [routerLink]="['blog']">Blog</button>
+  <mat-menu >
 
-<button mat-button [routerLink]="['blog']">Blog</button>
-<mat-menu >
+  </mat-menu>
 
-</mat-menu>
+    <span class="example-spacer"></span>
+    <button class="register-button" style="margin-right: 2px ;" mat-raised-button color="success" [routerLink]="['register']" >Sign-up</button>
+    <button class="login-button" mat-raised-button color="warn" [routerLink]="['login']" >Login</button>
 
-  <span class="example-spacer"></span>
-  <button mat-raised-button color="warn" (click)="openLogin()">Login</button>
+  </mat-toolbar>
 
-</mat-toolbar>
+
+</div>
 
 
 <router-outlet></router-outlet>

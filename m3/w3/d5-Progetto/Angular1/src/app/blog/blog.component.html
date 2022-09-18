@@ -9,12 +9,13 @@
 
   <mat-card style="width: 50%; margin:30px auto;" *ngFor="let post of posts">
     <mat-card-title>{{post.title}}</mat-card-title>
-    <mat-card-subtitle>{{post.content}}</mat-card-subtitle>
-    <mat-card-subtitle>{{post.data}}</mat-card-subtitle>
+
+    <mat-card-content>{{post.content}}</mat-card-content>
+    <mat-card-subtitle>{{post.data | date }}</mat-card-subtitle>
     <mat-card-actions align="end">
 
-      <button mat-raised-button color="primary" [routerLink]="['/profile','edit-post', post.id]">Edit</button>
-        <button mat-raised-button color="warn" (click)="deleteMyPost()" class="btn btn-danger ms-2">Delete</button>
+      <button mat-raised-button color="primary" (click)="editPost(post)" >Edit</button>
+        <button mat-raised-button color="warn" (click)="deletePost(post)" >Delete</button>
     </mat-card-actions>
   </mat-card>
 

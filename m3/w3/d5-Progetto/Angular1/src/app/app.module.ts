@@ -21,6 +21,9 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
+import { DialogEditComponent } from './dialog-edit/dialog-edit.component';
+import { RegisterComponent } from './register/register.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 
@@ -31,7 +34,9 @@ import {MatCardModule} from '@angular/material/card';
     DialogComponent,
     HomeComponent,
     BlogComponent,
-    LoginComponent
+    LoginComponent,
+    DialogEditComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +55,8 @@ import {MatCardModule} from '@angular/material/card';
     FormsModule,
     HttpClientModule,
     MatCardModule,
+    MatTabsModule
+
 
 
 

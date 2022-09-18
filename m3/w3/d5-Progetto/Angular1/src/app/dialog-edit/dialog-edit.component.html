@@ -1,13 +1,13 @@
-<h1 mat-dialog-title>Add new Post</h1>
+<h1 mat-dialog-title>Edit your Post</h1>
 <div mat-dialog-content>
   <form [formGroup]= "postForm" action="">
     <mat-form-field appearance="outline">
       <mat-label>Post title</mat-label>
-      <input [(ngModel)]="post.title" name="title" formControlName="title" matInput placeholder="Title...">
+      <input [(ngModel)]="post.title" name="title" formControlName="title" matInput placeholder="title..">
     </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>Post content</mat-label>
-      <textarea [(ngModel)]="post.content" name="content" formControlName="content" matInput placeholder="content"></textarea>
+      <textarea [(ngModel)]="post.content" name="content" formControlName="content" matInput placeholder="What are u thinking about?">"What are u thinking about?"</textarea>
     </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>Choose a date</mat-label>
@@ -23,6 +23,6 @@
 
 </div>
 <div  style="margin-top: 20px;" mat-dialog-action [align]="'end'">
-  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button mat-raised-button color="warn" mat-dialog-close (click)="ngOnInit()">Close</button>
   <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addPost()" >Save</button>
 </div>
