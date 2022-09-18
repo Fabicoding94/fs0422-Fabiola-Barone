@@ -7,7 +7,7 @@
     </mat-card-header>
 
     <mat-card-content>
-          <form action="" method="get">
+          <form [formGroup]="loginForm" (ngSubmit)="login()" method="get">
             <mat-form-field appearance="outline">
               <mat-label>Email</mat-label>
               <input type="email" name="email" formControlName="email" matInput placeholder="mario@mario.com">
@@ -19,11 +19,11 @@
             </mat-form-field>
           </form>
 
-          <button style="margin-left: 8px;" mat-raised-button color="primary"  >Login</button>
+          <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="login()" >Login</button>
 
           <div style="margin-top: 20px ;">
             <h5 class="mt-3 ms-2 fw-normal"> If you don't have an account, please
-              <button routerLink='/register' style="color: rgb(158, 6, 158) ;">Sign-up</button>
+              <button type="submit" routerLink='/register' style="color: rgb(158, 6, 158) ;" >Sign-up</button>
             </h5>
           </div>
 
