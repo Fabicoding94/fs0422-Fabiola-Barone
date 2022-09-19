@@ -1,1 +1,12 @@
-<p>home works!</p>
+<div class="example-table-container">
+
+  <mat-card style="width: 50%; margin:30px auto;" *ngFor="let post of posts">
+    <mat-card-title>{{post.title}}</mat-card-title>
+
+    <mat-card-content>{{post.content}}</mat-card-content>
+    <mat-card-subtitle>{{post.data | date }}</mat-card-subtitle>
+    <mat-card-actions align="end">
+
+
+    </mat-card-actions>
+  </mat-card>
