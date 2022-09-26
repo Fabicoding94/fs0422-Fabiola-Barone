@@ -1,7 +1,7 @@
 .example-card {
 
-  width: 33vw;
-  height: 35vh;
+  width: 45vw;
+  height: 45vh;
 }
 
 
@@ -16,4 +16,7 @@
 mat-form-field{
   width: 100%
 };
+
+
+
 

@@ -24,7 +24,7 @@ export class PostsService {
   }
 
   editPost(post: Post) {
-    return this.http.patch<Post>(this.apiUrl+'/'+post.id,post)
+    return this.http.patch<Post>(this.apiUrl+'/'+post.id, post)
   }
 
   deletePost(post: Post) {
