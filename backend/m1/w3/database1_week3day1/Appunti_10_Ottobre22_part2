@@ -1,0 +1,22 @@
+Nella cartella src/main/java creiamo un nuovo pacchetto "models"
+
+Dentro models creo una clsse "Student".
+Vogliamo che questa classe mappi la tabella students , che abbiamo sul database creato prima sul Postgresql.
+
+
+
+Il file persistence.xml va a creare il collegamento tra il file JAva e il database.
+
+-----
+Nel pgAdmin> table>students> tasto dx> view/edit> Allow rows.
+Vediamo bene che nel Data output ha creato tutte le colonne.
+Sotto alle colonne clicco in un punto bianco e poi F5 per refreshare.
+Vedo che ha aggiunto i dati dello studente che ho inserivo atraverso il file java.
+Siamo riusciti quindi a creare una Row nel Database.
+
+
+
+
+
+
+
