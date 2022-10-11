@@ -1,0 +1,19 @@
+CONSEGNA:
+- creare un db chiamato ex2 
+- creare un JPA project (occhio alle spunte!) chiamato ex2
+- creare pom.xml e connessione in persistence.xml
+- creare tabella Person (int id, String name)
+
+
+1)Creiamo il progetto JPA (disabilita libraries, )
+2) Lo cnvertiamo in Maven (tast dx > configure> convert to Maven)
+3)Nel pom.xml copiamo le dependecies (consiste nel'installare pacchetti. Le dep si incollano prima di <build>)
+4)Creiamo il collegamento al database di pgAdmin attraverso il file 
+persistence.xml
+
+
+5)In src/main/java creiamo "models" e dentro la classe  "Person"
+6)Mappiamo la classe Person, significa diamo @Entity e @Table
+
+
+

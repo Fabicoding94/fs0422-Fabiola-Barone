@@ -1,0 +1,44 @@
+1)Creo il file JPA = File> new Project >Project JPA
+
+2)Converto in Maven= tasto dx> Configure> Convert to Maven
+
+3)Installiamo i pacchetti hibernate, logback, commons-io, postgresql = aggiungendo le <dependecies> nel file pom.xml
+<dependencies>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-entitymanager</artifactId>
+        <version>5.4.30.Final</version>
+    </dependency>
+    <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.2.3</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.8.0</version>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>42.5.0</version>
+    </dependency>
+  </dependencies>
+  
+  
+  4)Creiamo il database "gestioneeventi" nel pgAdmin
+  Poi nella sez Schemas>Tabelle creiamo la tabella "eventi" con le colonne: id, dataeventi, descrizione, maxpartecipanti, tipoevento, titolo
+  
+  5) Nel file java andiamo su src/main/java e creiamo il pacchetto "models"
+  dentro cui creiamo le classi:Evento, Main e l'enum TipoEvento;
+  Nella classe Evento andiamo a mappare tutte le colonne.
+  Facciamo un costruttore vuoto e uno pieno 
+  (per farlo velocemente : tasto dx > source >create costructor for fields
+  
+  
+  
+  
+  
+
