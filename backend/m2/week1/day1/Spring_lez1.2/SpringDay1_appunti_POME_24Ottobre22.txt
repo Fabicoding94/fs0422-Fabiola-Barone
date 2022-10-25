@@ -1,0 +1,24 @@
+
+------------------------------------------------------------------
+Come creare un progetto con Spring: (online)
+https://start.spring.io/
+
+Oppure installa Spring e poi iniz sping project.
+
+Impostare le scelte:
+Maven; Java; come.fabiolabarone.lez1; lezione 1; add Lombok; Generate
+Scarica, dezippa e import project come Maven su Eclipse.
+
+Nel pom.xml -> inserisci la dependency di Lombok:
+<dependency>
+	<groupId>org.projectlombok</groupId>
+	<artifactId>lombok</artifactId>
+	<optional>true</optional>
+</dependency>
+
+
+Lombok= è un tool che mi permette di eliminare tutto il codice ripetitivo. Consente di aggiungere dei decoratori
+(@Getter, @Setter, @ToString, @Builder) che ci permettono di non dover andare a scrivere tutti questi 
+metodi delle classi, quindi ci riduce il lavoro. In realtà eclipse ci permette già di averli in automatico,
+(tasto destro-> source-> aggiungi getters and setters), ma lombok ci permette di omettere questa scrittura
+e rendere le classi più pulite.

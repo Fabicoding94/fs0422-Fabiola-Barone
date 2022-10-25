@@ -1,0 +1,32 @@
+Spring nasce 20 anni fa come approccio alternativo a Java. E' un framework backend e si può collegare ai framework frontend.
+
+Questa sett->
+1. Core di Spring Boot
+2.Maven
+3.Come collegare Spring a JPA
+
+Next week-> 
+Collegare Spring al web.
+
+Spring adotta strategie per semplificare lo sviluppo delle applicazioni Java.
+
+
+------------------------------------------------------------------
+Come creare un progetto con Spring: (online)
+https://start.spring.io/
+
+Oppure installa Spring e poi iniz sping project.
+
+Impostare le scelte:
+Maven; Java; come.fabiolabarone.lez1; lezione 1; add Lombok; Generate
+Scarica, dezippa e import project come Maven su Eclipse.
+
+desntro src/ source ->creiamo il beans.xml
+
+Configurazione attraverso Java e attraverso xml.
+
+Scarico Lombok= è un tool chemi permette di eliminare tutto il codice ripetitivo. Consente di aggiungere dei decoratori
+(@Getter, @Setter, @ToString, @Builder che ci permettono di non dover andare a scrivere tutti questi 
+metodi delle classi, riducono il lavoro).In realtà eclipse ci permette già di averli in automatico,
+(tasto destro-> source-> aggiungi getters and setters), ma lombok ci permette di omettere questa scrittura
+e rendere le classi più pulite.
