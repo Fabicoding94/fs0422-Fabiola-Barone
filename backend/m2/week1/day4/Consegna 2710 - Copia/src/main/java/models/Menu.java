@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -17,7 +19,11 @@ import lombok.Setter;
 @Setter
 public class Menu {
 
+	@Id
+	private Long id;
 	String nome;
+	
+	@ManyToMany
 	List<Pizza> pizze = new ArrayList();
 	List<Drink> drinks = new ArrayList();
 	List<Topping> toppings = new ArrayList();

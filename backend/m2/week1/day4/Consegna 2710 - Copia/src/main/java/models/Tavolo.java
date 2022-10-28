@@ -1,14 +1,26 @@
 package models;
 
-import lombok.Data;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Id;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+@Entity
 @Data
+@NoArgsConstructor
 public class Tavolo {
 	
 	private static long currentId = 0;
-	
+	@Id
 	private long id;
 	private int maxCoperti;
+	
+	@OneToMany
+	private List<Ordine> = new 
+
+	@Enumerated(EnumType.STRING)
 	private StatoTavolo stato = StatoTavolo.LIBERO;
 	
 	public Tavolo(int c) {

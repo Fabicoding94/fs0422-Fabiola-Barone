@@ -6,15 +6,28 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.persistence.ElementCollection;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+
 import org.springframework.beans.factory.annotation.Value;
 
 import lombok.Data;
 
+@Entity
 @Data
 public class Ordine {
 	
+	@Id
 	private long id;
+	@Enumerated(EnumType.STRING)
 	private StatoOrdine stato = StatoOrdine.IN_CORSO;
+	@ManyToOne
 	private Tavolo tavolo;
 	private int nCoperti;
 	private int ora = LocalDateTime.now().getHour();
@@ -23,6 +36,7 @@ public class Ordine {
 	private double costoCoperto;
 
 	//private Map<Integer, ProdottoOrdine> listaOrdine = new HashMap<Integer, ProdottoOrdine>();
+	@ElementCollection
 	private Map<ProdottoOrdine, Integer> listaOrdine = new HashMap<ProdottoOrdine, Integer>();
 	//private List<ProdottoOrdine> listaOrdine = new ArrayList<ProdottoOrdine>();
 

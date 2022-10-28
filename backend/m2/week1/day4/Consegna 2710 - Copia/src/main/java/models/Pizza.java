@@ -5,13 +5,24 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import javax.persistence.Entity;
+
+import org.slf4j.LoggerFactory;
+
+import ch.qos.logback.classic.Logger;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@Entity
 @Getter
 @Setter
+@NoArgsConstructor
+
 public class Pizza extends FoodItem {
 	
+	Logger l = LoggerFactory.getLogger(Pizza.class);
+	@ManyToMany
 	List<Topping> ingredienti = new ArrayList();
 	
 	private boolean familySize = false;
