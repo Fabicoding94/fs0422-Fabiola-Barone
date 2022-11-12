@@ -3,6 +3,6 @@ package com.GestioneIncendi.GestioneIncendi.models;
 public interface Observer {
 
 	
-	public abstract void update(Subject sub);
+	public void notifica(Subject s);
 	
 }
