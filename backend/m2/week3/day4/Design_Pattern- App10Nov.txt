@@ -1,0 +1,44 @@
+Appunti_Design-Patterns 10Novembre
+
+Singleton= è una classe della quale vogliamo ci sia una e una sola istanza.
+Si inizializza come 
+final class Singleton{}
+
+3h48min
+Bel WebSecurityConfig (a riga 47) il cors permette di collegare backend 
+e frontend.
+Il cors è abilitato solo per il get degli users.
+
+Nel progetto di Html andiamo a fare una fetch che va a richiamare 
+la get del Backend. In fondo al body aggiungiamo lo script:
+
+HTML (Collegamento al backend)
+
+<body>
+
+<div id="users">
+</div>
+
+<script>
+
+const users = document.getElementById("users")
+
+fetch("http://localhost:8000/api/users")
+.then(res => res.json())
+.then(res => {
+     res.forEach(user=>{
+            const el = document.createElement("div");
+             el.innerHTML = user.firstName + " " + user.email;   
+             users.appendChild(el); 
+             
+              const img = document.createElement("img");
+              img.src = "images/img" + user.id + ".pgn"
+              img.width=200;
+              el.appendChild(img);
+              users.appendChild(el);
+
+
+            })
+
+</script>
+</body>

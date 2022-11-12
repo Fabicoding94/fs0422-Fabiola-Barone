@@ -1,0 +1,22 @@
+ Cos'è GitHub?
+GitHub è un sistema di versionamento del codice sirgente, che consente di memorizzare 
+il codice in modo sicuro e tracciare le modifiche apportate.
+Una importantissima funzionalità è quella che permette la collaborazione 
+tra diversi collaboratori, i quali possono scrivere delle parti differenti di
+codice per uno stesso programma e poi metterli insieme (tenicamente fare il merge).
+
+Esso da la possibilità di partire da una repository master principale,
+da questo si può fare una copia (development) e da questo possono dipartirsi diversi rami.
+
+Pull -> scarichiamo le modifiche apportatedal Git al nostro workspace
+
+Pushare sulla branch principale:
+git init
+git add <filename>
+git commit -m <commit message>
+git remote add origin >Link to your remote rep>
+git push origin <branch name>
+
+
+Guida tascabile di Git
+https://rogerdudler.github.io/git-guide/index.it.html

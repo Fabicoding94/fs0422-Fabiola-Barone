@@ -1,0 +1,41 @@
+Microservizi_appunti (LezBEm2w3d2 8Nov22) p2
+
+Microservizio= servizio di picc dimensioni che fa parte 
+di una architettura di microservizi (di un set),
+accoppiati per svolgere un obiettivo comune.
+Questi possono essere sviluppati singolarmente, ogni
+microservizio ha il proprio database indipendente
+(non sempre).
+
+Caratteristiche:
+-Sviluppato da un piccolo team (elevata produttività)
+-Manutenibile e testabile facilmente
+-...
+
+Microservizio comunica con altri microservizi:
+-Client AI
+-Private API
+-Events
+-Business Logic
+-Database
+
+
+Vantaggi:
+-Diversità tecn
+-Poss sperimentazione
+-Facilità migrazione=
+Se un singolo microservizio ha una tecnologia obsoleta è più
+facile andarlo ad aggiornare, senza bloccare l'intero
+sistema.
+-Resilienza e disponibilità= quando un microservizio si 
+interrompe, le altre parti del sistema continueranno 
+a funzionare.
+
+Svantaggi:
+
+ACID Transaction (Atomicità, consistenza, isolamento,
+ durabilità)
+Nell'ambito dei database una transazioni NON è ACID se non 
+è ottimizzata con i "cascade", quindi ad es
+elimino un elemento, ma restano ancora dei dati 
+correlati a quell'elemento.

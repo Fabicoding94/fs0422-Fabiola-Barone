@@ -1,0 +1,54 @@
+Microservizi  (LezBEm2w3d2 8Nov22) p1
+
+Architettura basata sui Microservivi.
+Le comp singole dell'appl sono scorporate per microservizi,
+per fare in modo che ciascun microservizio sia 
+sviluppato da un team diverso.
+
+A diff dell'architettura monolitica, l'architettura dei
+microservizi è ancora giovane.
+Le Big Tech (servizi come Fb, ig, yT) utilizzano 
+entrambe.
+
+Programmazione sincrona e asincrona
+Sinc= nella progr sinc, un programma inizia solo quanto 
+termina l'esecuzione del precedente.
+
+Asinc= ho un'operazione che può essere svolta in 
+background (es faccio una chiamata fetch, che non da
+subito una risp ma dà una promise, che gestiamo con il.then
+, il dato ci verrà restituito dopo).
+Quindi gli atri programmi vanno in cont.
+
+Nella progr asinc possiamo continuare con il servizio principale
+mentre contattiamo un altro microservizio.
+
+DevOps= termine ampio. Meccanismi che ci permettono di programmare 
+(codice, testing) + comunicazione server-cloud.
+Sviluppatore + ruolo architetturale + distribuzione.
+
+I service worker hanno ampliato Javascript.
+
+Architettura Monolitica è data da:
+-Un database (PostgreSQL, MySQL, MongoDB, etc..)
+-un API : si occupa di gestire tutte le invocazioni prov 
+dall'esterno
+-Una SPA (Single page app)
+Un problema di questa arch riguarda la "scalabilità".
+Cioè problemi di capacità, memoria.
+Soluzione verticale: si aggiunge spazio su RAM.
+Solz orizzontale: si aggiungono altri server. I load 
+balancer servono a distribuire le richieste su 
+diversi server.(NGINX è un load balancer).
+
+Svantaggi Arch Monoltica= 
+-necessitano di server di grandi dim
+-tempo di avvio lento
+-piccole modifiche richiedono molto tempo
+-richiederebbero grandi team di svilupp, non è comodo
+
+
+
+
+
+
